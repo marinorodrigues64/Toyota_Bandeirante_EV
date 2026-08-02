@@ -1,0 +1,9 @@
+{
+  "name": "toyota-bandeirante-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend serverless (Vercel) que protege a chave da API Anthropic para o formulário Toyota Bandeirante.",
+  "engines": {
+    "node": ">=18"
+  }
+}
