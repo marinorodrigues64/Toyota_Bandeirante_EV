@@ -1,1 +1,5 @@
-ANTHROPIC_API_KEY= sk-ant-api03-.......
+# Copie este arquivo para ".env" (uso local com `vercel dev`)
+# ou configure a mesma variável no painel do Vercel em
+# Project Settings > Environment Variables.
+
+ANTHROPIC_API_KEY= sk-ant-api03-......
