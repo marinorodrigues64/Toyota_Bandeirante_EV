@@ -1,14 +1,47 @@
 // api/gerar-plano.js
+//
 // Função serverless (Vercel) que recebe o resumo do formulário da Toyota
-// Bandeirante, chama a API da Anthropic usando a chave guardada no servidor
-// (nunca exposta ao navegador) e devolve o texto do plano de conversão.
+// Bandeirante, monta o prompt com o "Prompt PME" e o "Plano Master (PMB)"
+// já embutidos localmente (sem depender de nenhum link externo), chama a
+// API da Anthropic usando a chave guardada no servidor (nunca exposta ao
+// navegador) e devolve o texto do plano de conversão.
+//
+// Por que os documentos estão embutidos (e não buscados por link)?
+// O Proton Drive exige JavaScript para carregar a página de compartilhamento,
+// e a ferramenta de busca da API não consegue executar JavaScript — ela
+// sempre recebia uma página vazia. Isso fazia o Claude "chutar" um relatório
+// genérico, e ainda cobrava pelas tentativas de busca. Embutir o conteúdo
+// real resolve os dois problemas de uma vez: qualidade e custo.
 
-const DOC_BASE_URL = "https://drive.proton.me/urls/JQEG1ZRM8W#wuaoWJ8ZVpOa";
-const PROMPT_URL = "https://drive.proton.me/urls/7X2RX1M4FW#9743AkMTuJro";
+const fs = require("fs");
+const path = require("path");
 
-// Ajuste aqui se quiser restringir quem pode chamar este endpoint
-// (ex.: o domínio onde o formulário está hospedado).
-const ALLOWED_ORIGIN = "*";
+const ALLOWED_ORIGIN = "*"; // restrinja ao seu domínio, se quiser
+
+// Lê os dois documentos uma única vez (fora do handler), para não reler
+// disco a cada chamada.
+const PROMPT_PME_TEXT = fs.readFileSync(
+  path.join(__dirname, "data", "prompt-pme.txt"),
+  "utf-8"
+);
+const PMB_TEXT = fs.readFileSync(
+  path.join(__dirname, "data", "documento-base.txt"),
+  "utf-8"
+);
+
+// Ajuste de formato: o "Prompt PME" original pede saída em .PDF. A API de
+// texto não gera um arquivo PDF binário — então pedimos aqui, explicitamente,
+// que o mesmo conteúdo/estrutura seja entregue em Markdown bem formatado
+// (títulos, tabelas, listas), que é o que o formulário consegue exibir e
+// baixar. Se quiser um PDF de verdade depois, dá para converter o Markdown
+// resultante separadamente.
+const AJUSTE_FORMATO = `\n\nAJUSTE DE FORMATO DE ENTREGA (sobrepõe a instrução "FORMATO DA RESPOSTA" acima):
+Entregue o documento em Markdown puro (títulos com #, tabelas em formato Markdown, listas com "-"), não em PDF. Mantenha toda a estrutura de capítulos, a matriz de decisão final e a matriz de rastreabilidade exatamente como especificado.`;
+
+const SYSTEM_PROMPT = PROMPT_PME_TEXT +
+  AJUSTE_FORMATO +
+  "\n\n=== PLANO MASTER DE ELETRIFICAÇÃO (PMB) — BASE DE CONHECIMENTO OBRIGATÓRIA ===\n\n" +
+  PMB_TEXT;
 
 module.exports = async (req, res) => {
   // CORS básico
@@ -39,17 +72,11 @@ module.exports = async (req, res) => {
       return;
     }
 
-    const promptParaClaude = `Você deve gerar um plano específico de conversão elétrica para uma Toyota Bandeirante, usando as informações abaixo.
-
-Primeiro, acesse e leia estes dois documentos públicos:
-1. Documento base (especificações técnicas de referência): ${DOC_BASE_URL}
-2. Prompt / roteiro de elaboração do plano: ${PROMPT_URL}
-
-Em seguida, execute exatamente o que o "Prompt Claude" indicar, aplicando-o aos dados do veículo abaixo (coletados via formulário "Informações da Toyota Bandeirante"):
+    const userMessage = `Aqui está o resumo do veículo, coletado via formulário "Informações da Toyota Bandeirante":
 
 ${resumo}
 
-Gere o documento final do plano de conversão em português, pronto para ser entregue ao proprietário do veículo. Responda apenas com o conteúdo do documento (sem comentários adicionais fora do documento).`;
+Execute as 5 etapas definidas no seu papel (Levantamento, Validação, Análise de Compatibilidade, Geração do Plano Master Específico e conclusão) e gere o Plano Master Específico (PME) completo para este veículo, seguindo rigorosamente a estrutura de capítulos definida.`;
 
     const anthropicResponse = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
@@ -60,9 +87,21 @@ Gere o documento final do plano de conversão em português, pronto para ser ent
       },
       body: JSON.stringify({
         model: "claude-sonnet-4-6",
-        max_tokens: 4000,
-        messages: [{ role: "user", content: promptParaClaude }],
-        tools: [{ type: "web_search_20250305", name: "web_search" }],
+        max_tokens: 8192,
+        system: [
+          {
+            type: "text",
+            text: SYSTEM_PROMPT,
+            // Marca o PMB + Prompt PME (conteúdo estático, grande) como
+            // cacheável. Na primeira chamada custa um pouco mais (escrita
+            // de cache); nas chamadas seguintes, dentro da janela de cache,
+            // esse bloco custa ~90% menos.
+            cache_control: { type: "ephemeral" },
+          },
+        ],
+        messages: [{ role: "user", content: userMessage }],
+        // Sem "tools": nada de web_search. Não precisamos mais buscar nada
+        // na internet — os documentos já estão embutidos acima.
       }),
     });
 
@@ -85,7 +124,17 @@ Gere o documento final do plano de conversão em português, pronto para ser ent
       return;
     }
 
-    res.status(200).json({ plano: planoTexto });
+    // Se o Claude foi cortado por atingir o limite de tokens, avisamos no
+    // próprio documento para não parecer um erro silencioso.
+    const truncado = data.stop_reason === "max_tokens";
+    const aviso = truncado
+      ? "\n\n---\n⚠ ATENÇÃO: este documento pode ter sido cortado por atingir o limite de tokens de saída. Se faltar conteúdo no final, aumente 'max_tokens' em api/gerar-plano.js e gere novamente.\n"
+      : "";
+
+    res.status(200).json({
+      plano: planoTexto + aviso,
+      usage: data.usage || null, // útil para acompanhar consumo de tokens
+    });
   } catch (err) {
     console.error("Erro inesperado:", err);
     res.status(500).json({ error: "Erro inesperado no servidor.", detail: String(err) });
