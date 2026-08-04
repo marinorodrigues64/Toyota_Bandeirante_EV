@@ -1,0 +1,969 @@
+Plano Master de Eletrificação — Toyota Bandeirante 4x4	*Edição Consolidada — Julho de 2026*
+
+	Plano Master de Eletrificação — Toyota Bandeirante 4x4	*Edição Consolidada — Julho de 2026*
+
+PLANO MASTER DE ELETRIFICAÇÃO
+
+**TOYOTA BANDEIRANTE 4X4**
+
+*Documento Único e Exclusivo --- Retrofit EV **&** Preservação Histórica*
+*Frota Nacional Brasileira --- Fabricação 1958 a Novembro de 2001*
+*Todas as versões de carroçaria, entre-eixos e motorização originais*
+*Edição Consolidada --- Julho de 2026*
+
+*Autor: Marino Rodrigues ( apaixonado por Toyota Bandeirante)*
+
+**ÍNDICE**
+
+Atualize este campo (clique com o botão direito > Atualizar Campo) para gerar o índice.
+
+BLOCO I: Contexto, Visão Geral e Alinhamento Estratégico
+
+1. Escopo e Premissas do Plano
+
+Este documento estabelece o plano master de engenharia, único e consolidado, para a conversão elétrica (retrofit EV) de veículos Toyota Bandeirante fabricados no Brasil entre 1958 e 2001, contemplando tração 4x4. O plano é exclusivo para a família Bandeirante --- incluindo todas as suas variantes de entre-eixos, carroçaria e motorização originais --- e não se aplica, referencia ou compara a solução a nenhum outro veículo, marca ou plataforma, incluindo outros clássicos 4x4 off-road.
+
+Em razão da longevidade produtiva do modelo (mais de quatro décadas de fabricação nacional), este plano reconhece, como premissa central, que a frota circulante de Bandeirantes não é mecanicamente homogênea. Motorização, câmbio, freios, direção e dimensões de chassi variam significativamente conforme o ano de fabricação e a versão de carroçaria do veículo doador. Consequentemente, o plano master opera por meio de ramificações técnicas condicionadas ao ano/versão do veículo, detalhadas ao longo de todo o documento, em vez de assumir uma especificação mecânica única e homogênea para toda a frota.
+
+**📌 Versões Contempladas por este Plano**
+
+• Motorizações de base: Mercedes-Benz OM-324 (1962–1973); Mercedes-Benz OM-314 (1973–1989); Mercedes-Benz OM-364 (1989–1994); Toyota 14B (1994–2001).
+• Carrocerias: Jipe Curto (OJ50 / OJ55 / OJ50L / BJ50), Perua Longa (OJ54 / BJ54 / BJ55), Picape Cabine Simples e Picape Cabine Dupla.
+• Período de fabricação nacional: 1958 a novembro de 2001.
+• Configuração mecânica de referência mantida: câmbio original (adaptado ou substituído conforme matriz da seção 8.1), caixa de redução 4x4, eixo traseiro (upgrade mandatório quando semi-flutuante --- seção 6), diferenciais, freio a disco nas 4 rodas (conversão mandatória --- seção 5.2), caixa de direção (hidráulica original ou solução adaptada --- seção 7) e guincho (elétrico, mecânico ou sem guincho).
+• Metas técnicas: autonomia garantida de no mínimo 300 km em estrada para as versões Perua e Picape (autonomia reduzida e assumida como trade-off na versão Jipe Curto --- seção 12.1), retrofit do freio de estacionamento, componentes com representação nacional e regularização plena no Detran.
+• Arquitetura elétrica: barramento de alta tensão em 400V, adotado como padrão preferencial por disponibilidade de componentes e suporte técnico no Brasil.
+
+As diretrizes técnicas apresentadas nas seções seguintes substituem qualquer premissa de especificação única aplicada indistintamente a toda a frota. Todas as decisões de engenharia --- transmissão, freios, direção, layout de bateria, eixo traseiro, freio de estacionamento e homologação --- são condicionadas ao ano de fabricação e à versão de carroçaria/entre-eixos do veículo doador, sendo essa condicionalidade o princípio organizador de todo o documento.
+
+1.1 Fontes de Referência e Validação Técnica dos Dados do Veículo Doador
+
+Como parte da revisão técnica deste documento, os dados de motorização, câmbio, freios, direção e eixo traseiro apresentados nas seções 1, 3, 5, 6, 7 e 8 foram conferidos frente a fontes especializadas na história e na manutenção do Toyota Bandeirante --- reportagens automotivas dedicadas ao modelo, o verbete da Toyota Land Cruiser (J40)/Bandeirante e catálogos de fornecedores de peças de reposição especializados no veículo, que segmentam seus produtos por ano de fabricação. O resultado dessa checagem confirma que os dados técnicos do plano são consistentes com o histórico de produção nacional do veículo, não tendo sido identificada nenhuma inconsistência que exigisse correção de mérito. Os pontos verificados foram:
+
+**Motorizações e período de fabricação: **a sequência OM-324 (1962--1973), OM-314 (1973--1989), OM-364 (1989--1994) e Toyota 14B (1994--novembro de 2001) confere com reportagens especializadas na história do modelo e com o levantamento de versões do Toyota Land Cruiser J40/Bandeirante.
+
+**Câmbio --- reduzida (1981) e 5 marchas (1993): **a introdução da reduzida na caixa de transferência na linha 1981 e do câmbio sincronizado de cinco marchas na linha 1993 é reportada de forma consistente por publicações especializadas na história do Bandeirante, confirmando a matriz de compatibilidade da seção 8.1.
+
+**Direção hidráulica de série (1993): **a mesma revisão histórica confirma que a direção assistida tornou-se item de série na linha 1993, respaldando a divisão em Ramo A/Ramo B da seção 7.
+
+**Freio a disco dianteiro (1995/1996), tambor traseiro de fábrica: **catálogos de fornecedores especializados em peças de freio para o Bandeirante segmentam kits de conversão e reposição de disco dianteiro a partir do intervalo 1995/2001, com tambor traseiro mantido em toda a produção de fábrica, confirmando o diagnóstico e a matriz de conversão da seção 5.
+
+**Eixo traseiro semi-flutuante vs. flutuante: **fornecedores especializados em peças de reposição para eixo traseiro do Bandeirante catalogam o semi-eixo flutuante como aplicável a partir do início/meados da década de 1980, com o eixo semi-flutuante ("canela fina") característico de exemplares anteriores, confirmando o diagnóstico e o upgrade mandatório da seção 6.
+
+Ressalva metodológica: as fontes acima são reportagens automotivas especializadas, o verbete de referência do modelo e catálogos comerciais de fornecedores dedicados ao Bandeirante --- não há manual de fábrica ou catálogo oficial Toyota/Mercedes-Benz publicamente disponível para consulta direta. Antes da execução de cada projeto, o levantamento de configuração da seção 3 permanece mandatório e prevalece sobre qualquer referência genérica deste documento, já que a real motorização, câmbio, freios, direção e tipo de eixo devem ser confirmados fisicamente no veículo doador específico, inclusive por meio da plaqueta de identificação e do documento de registro do veículo.
+
+**Conclusão da Avaliação de Aplicabilidade Técnica (mecânica e conversão elétrica): **o plano é tecnicamente aplicável à linha Toyota Bandeirante fabricada no Brasil, na medida em que trata corretamente a frota como mecanicamente heterogênea e condiciona cada subsistema crítico --- câmbio, freios, direção, eixo traseiro e layout de bateria --- à configuração real do veículo doador por período de fabricação, em vez de assumir uma especificação única. A única lacuna técnica material identificada nesta revisão --- ausência de verificação de capacidade do eixo dianteiro, diferencial dianteiro, cardãs e homocinéticas frente ao torque elétrico instantâneo, já tratada para o eixo traseiro --- foi corrigida com a inclusão de novo item mandatório na seção 4.4 e de nova linha na matriz de riscos (seção 21).
+
+2. Sumário Executivo
+
+Este documento consolida o Plano Master definitivo, único e exclusivo, para a conversão elétrica (retrofit EV) e preservação histórica de veículos Toyota Bandeirante fabricados no Brasil. O projeto combina a restauração completa do veículo --- não coberta neste documento --- a uma conversão elétrica de alta precisão, revitalizando o veículo para mantê-lo pleno e em circulação pelas próximas décadas, com pleno reconhecimento da diversidade mecânica da frota ao longo de mais de quarenta anos de produção.
+
+A diretriz técnica central estabelece a manutenção, sempre que tecnicamente viável, de toda a linha de tração original robusta --- câmbio, caixa de redução, eixos cardãs, diferenciais e eixos (traseiro e dianteiro) --- substituindo o motor a combustão a diesel pelo powertrain elétrico. Onde a configuração original de fábrica não suporta com segurança o torque elétrico instantâneo ou não atende aos requisitos mínimos de segurança veicular contemporâneos (câmbios sem reduzida, eixo traseiro semi-flutuante, freios a tambor nas quatro rodas, direção mecânica seca), o plano estabelece upgrades e adaptações mandatórias específicas, detalhadas por ano e versão do veículo doador.
+
+O projeto adota como arquitetura preferencial o barramento de alta tensão em 400V, por oferecer a melhor disponibilidade de componentes (motor, inversor, OBC, contatores) e suporte de manutenção no mercado brasileiro, frente a arquiteturas de tensão mais elevada. O pack de baterias de química LFP (Lítio-Ferro-Fosfato) é dimensionado e distribuído conforme a versão de carroçaria do veículo doador: 90 a 100 kWh em três módulos para as versões Perua Longa e Picape (atingindo a meta de autonomia de 300 km), e 60 a 75 kWh em dois módulos para a versão Jipe Curto, cujo espaço reduzido sob o assoalho não comporta o layout de três módulos sem comprometer a integridade estrutural ou o vão livre do solo.
+
+O documento está organizado de forma a tratar a heterogeneidade da frota como princípio estrutural: cada subsistema crítico --- transmissão, freios, direção, layout de baterias e eixo traseiro --- é apresentado com diagnóstico da configuração original de fábrica por período de fabricação, seguido da diretriz técnica ramificada aplicável a cada configuração. Este formato substitui a abordagem de especificação única presente em versões anteriores do plano, refletindo com precisão a realidade de uma frota fabricada ao longo de mais de quatro décadas.
+
+3. Diagnóstico do Veículo e Componentes Mantidos por Configuração
+
+A arquitetura do projeto baseia-se no aproveitamento estratégico da plataforma mecânica original, revisada com peças originais ou de reposição equivalente, sempre condicionado à configuração de fábrica do veículo doador conforme seu ano de fabricação e versão de carroçaria:
+
+Câmbio e Caixa de Redução: tratamento condicionado à geração do câmbio equipado de fábrica (3 marchas, 4 marchas sem reduzida, 4 marchas com reduzida ou 5 marchas com reduzida pós-1993) --- ver matriz de compatibilidade completa na seção 8.1. O motor elétrico entrega torque máximo em 0 RPM; a manutenção do câmbio original (quando tecnicamente viável) e da reduzida permite otimizar a eficiência do motor elétrico em velocidade de cruzeiro na estrada e multiplicar o torque nas trilhas off-road.
+
+Eixo Traseiro e Diferenciais: mantidos apenas quando o veículo doador já equipa eixo traseiro flutuante reforçado de fábrica. Veículos com eixo semi-flutuante original (canela fina, típico das décadas de 60 e 70) exigem upgrade mandatório para eixo flutuante reforçado antes da instalação do motor elétrico --- ver seção 6.
+
+Caixa de Direção: tratamento em duas ramificações conforme o ano de fabricação --- manutenção da caixa hidráulica original com bomba EHPS de 12V para veículos pós-1993, ou adaptação de caixa hidráulica/coluna EPS para veículos com direção mecânica seca original (pré-1993) --- ver seção 7.
+
+Freios a Disco nas 4 Rodas: tratado como pré-requisito mecânico obrigatório a ser executado antes ou em conjunto com a integração da frenagem regenerativa, e não como equipamento pré-existente. O escopo de conversão varia conforme a configuração original de freio do veículo doador --- ver seção 5.2.
+
+Guincho: mantido, quando presente. O guincho elétrico é alimentado por uma bateria auxiliar AGM/Optima de 12V. O guincho mecânico, quando presente, é mantido sem alterações necessárias.
+
+Sistema 12V: mantido e recalculado. Uma bateria auxiliar AGM/Optima de 12V é recarregada por um conversor DC-DC superdimensionado (100A–150A) ligado ao pack de alta tensão. Nos veículos do Ramo B da seção 7 (direção mecânica original convertida para EPS), o dimensionamento deste sistema deve ser recalculado para acomodar a carga adicional do sistema de direção assistida.
+
+**[MANDATÓRIO] **Descomissionamento do Sistema de Combustível Diesel Original: remoção completa do tanque, linhas, bomba injetora e filtros de combustível diesel, com drenagem, limpeza/inertização do tanque e destinação do diesel residual conforme a legislação ambiental aplicável, executada antes da instalação de qualquer componente de alta tensão. Tratado como pré-requisito de segurança contra incêndio, e não como consequência automática da retirada do motor --- ver ponto de atenção mandatório detalhado na seção 4.4.
+
+Antes do início de qualquer projeto de conversão, é mandatório o levantamento completo da configuração original do veículo doador --- ano de fabricação, motorização, câmbio, sistema de freios, sistema de direção e versão de carroçaria/entre-eixos --- de forma a selecionar corretamente, entre as ramificações técnicas detalhadas neste documento, a rota de engenharia aplicável a cada subsistema. Este levantamento deve ser registrado formalmente no laudo técnico do projeto, previamente à aquisição de componentes.
+
+4. Vantagens, Desvantagens e Cuidados Críticos
+
+✅ Vantagens
+
+Preservação de um ícone da história automobilística brasileira: perpetua um veículo histórico com tecnologia limpa e duradoura, respeitando a diversidade mecânica real da frota nacional.
+
+Conforto Acústico e Operacional: elimina ruídos e vibrações brutas do motor diesel tradicional em viagens longas.
+
+Torque Absoluto Imediato: desempenho impressionante em arrancadas e máxima força na reduzida off-road, com proteção eletrônica adequada a cada geração de câmbio.
+
+Freio de Estacionamento Simplificado: solução mecânica principal reduz o escopo de itens elétricos sujeitos à vistoria, com EPB disponível como opcional de conforto.
+
+Direção Adaptada por Geração: solução específica para veículos com e sem direção hidráulica original, minimizando alterações estruturais desnecessárias.
+
+Redução de Manutenção Periódica: fim de trocas de óleo de motor, bicos injetores e filtros de combustível.
+
+Balanceamento de Massa Otimizado por Versão: distribuição de baterias em 2 ou 3 módulos, adequada ao espaço real de cada carroçaria, melhora a estabilidade e a dirigibilidade.
+
+Arquitetura 400V: maior disponibilidade de componentes e de suporte técnico no mercado nacional em comparação a arquiteturas de tensão mais elevada.
+
+Segurança Estrutural Elevada: upgrade mandatório de eixo traseiro e conversão de freios a disco eliminam pontos de falha estrutural conhecidos da plataforma original diante do torque elétrico.
+
+❌ Desvantagens
+
+Investimento Inicial Expressivo: retorno financeiro puramente motivado pela conservação do patrimônio, ampliado nas versões que exigem upgrade de eixo traseiro e conversão completa de freios.
+
+Acréscimo de Carga Estática: o pack de baterias adiciona massa relevante ao veículo, exigindo recalibração das molas de suspensão (seção 9), mais crítico nas versões de Chassi Curto.
+
+Complexidade de Manutenção Especializada: sistemas de alta tensão e a VCU exigem mão de obra qualificada para diagnóstico, ainda que os procedimentos estejam documentados.
+
+Variabilidade de Escopo entre Veículos: a necessidade de levantamento individual de configuração e a existência de múltiplas ramificações técnicas tornam cada projeto único, exigindo orçamento e cronograma específicos por veículo doador.
+
+⚠️ Recomendações para Preservar a Capacidade Off-Road e a Confiabilidade em Viagens Longas
+
+Vão Livre e Ângulos de Trilha: validar, após a instalação dos módulos de bateria (2 ou 3, conforme a carroçaria) e respectivos skid plates, que o ângulo de ataque, saída e ventral permanecem compatíveis com o uso histórico do veículo em trilhas.
+
+Redundância Térmica em Subidas Prolongadas: validar em campo o comportamento do gerenciamento térmico em subidas longas na reduzida (baixa velocidade, alta corrente), cenário mais severo para o motor e o inversor do que a velocidade de cruzeiro rodoviária.
+
+Autonomia com Reserva Operacional: em expedições remotas sem infraestrutura de recarga, adotar margem de reserva de SOC (não utilizar a faixa completa de 0–100%) para preservar vida útil das células e garantir energia para o guincho elétrico em situação de resgate --- especialmente relevante para a versão Jipe Curto, com autonomia reduzida.
+
+Inspeção Pré-Expedição do Sistema HV: checagem do HVIL, do monitor de isolamento (IMD) e da integridade dos respiros e vedações IP67/IP68 antes de cada viagem de longa duração, conforme procedimento de manutenção documentado.
+
+Backup Mecânico Sempre Operacional: manter o freio de estacionamento mecânico testado e lubrificado periodicamente, garantindo travamento do veículo mesmo em caso de falha elétrica total durante uma expedição remota.
+
+Peças de Reposição Críticas a Bordo: levar em expedições remotas o kit mínimo definido na lista de peças críticas (seção 20), dado o tempo de resposta logístico em regiões isoladas.
+
+4.4 Pontos de Atenção Adicionais Identificados em Revisão Técnica (Itens Mandatórios de Segurança e Recomendações Complementares)
+
+Em complemento aos pontos de atenção já tratados nas seções anteriores, a revisão técnica deste plano identificou os itens adicionais listados abaixo. Itens marcados como [MANDATÓRIO] afetam diretamente a segurança do veículo, de seus ocupantes ou de terceiros, e devem ser tratados com o mesmo rigor dos demais pré-requisitos estruturais e elétricos mandatórios deste documento (seções 5, 6 e 13); itens marcados como [RECOMENDADO] são complementares e ficam a critério do projeto e do proprietário. Os itens de segurança abaixo foram também incorporados como novas linhas da matriz de riscos técnicos (seção 21).
+
+**[MANDATÓRIO] **Descomissionamento do Sistema de Combustível Diesel Original: detalhado como novo item do levantamento de configuração (seção 3), a remoção completa e a inertização do tanque e das linhas de diesel devem ser tratadas como pré-requisito de segurança contra incêndio, executado antes da instalação de qualquer componente de alta tensão.
+
+**[MANDATÓRIO] **Capacidade de Carga de Pneus e Rolamentos de Roda: verificação obrigatória do índice de carga dos pneus e da capacidade dos rolamentos de roda dianteiros e traseiros frente ao acréscimo de massa do pack de baterias (500 a 1.000 kg, conforme a versão --- seção 9.1), com upgrade para pneus e/ou rolamentos de maior capacidade quando o índice original for insuficiente --- ver detalhamento incluído na seção 9.1.
+
+**[MANDATÓRIO] **Capacidade de Carga da Caixa de Direção e Terminais/Mangas de Eixo Dianteiros: verificação da capacidade estrutural da caixa de direção, dos terminais de direção (tie rods) e das mangas de eixo dianteiras frente ao acréscimo de peso sobre o eixo dianteiro decorrente do módulo frontal de bateria, evitando falha por fadiga --- ver detalhamento incluído na seção 9.2.
+
+**[MANDATÓRIO] **Proteção do Cabeamento HV contra Flexão do Chassi em Uso Off-Road: ancoragem e folga do cabeamento de alta tensão dimensionadas para acompanhar a torção e a flexão relativa entre longarinas, carroçaria e eixos, típicas do chassi tipo escada em articulação off-road, evitando fadiga e ruptura da isolação --- ver detalhamento incluído na seção 13.1.
+
+**[MANDATÓRIO] **Profundidade Máxima de Vau (Fording Depth) Compatível com a Vedação HV: definição formal, em projeto, da profundidade máxima de vau compatível com a vedação IP67/IP68 certificada dos módulos de bateria, do inversor e dos conectores HV, documentada no manual do proprietário e no cartão de resgate --- ver detalhamento incluído na seção 13.1.
+
+**[MANDATÓRIO] **Reavaliação e Regularização do Peso Bruto Total (PBT): verificação e, quando necessário, regularização formal do novo Peso Bruto Total do veículo junto ao Detran/ITL em função do acréscimo de massa do pack de baterias, assegurando compatibilidade com a capacidade de frenagem e com a categoria de habilitação exigida do condutor --- ver detalhamento incluído na seção 19.2.
+
+**[MANDATÓRIO] **Preservação da Trava de Direção (Steering Lock) no Ramo B2: nas conversões que adotam a adaptação de coluna de direção com assistência elétrica (EPS, Ramo B2 --- seção 7), é mandatória a manutenção ou a reinstalação de trava de direção mecânica funcional, preservando o dispositivo antifurto de série exigido para o veículo --- ver detalhamento incluído na seção 7.
+
+**[RECOMENDADO] **Sistema de Supressão Automática de Incêndio no Compartimento de Baterias: avaliação de sistema de supressão automática (aerossol ou similar) dedicado ao compartimento de baterias, como camada adicional ao extintor portátil e à barreira de propagação térmica já previstos (seção 13.1), especialmente recomendado para uso em expedições remotas com tempo de resposta de socorro prolongado.
+
+**[RECOMENDADO] **Checklist de Familiarização do Condutor com Procedimentos de Emergência HV: formalização de um checklist pré-viagem de familiarização do condutor com os procedimentos de desenergização, com o acionamento do freio mecânico de backup e com a localização dos itens do cartão de resgate (seção 20), a ser assinado antes da primeira liberação do veículo para uso em expedição.
+
+**[MANDATÓRIO] **Verificação de Capacidade do Eixo Dianteiro, Diferencial Dianteiro, Cardãs e Juntas Homocinéticas frente ao Torque Elétrico Instantâneo: a seção 6 estabelece upgrade mandatório do eixo traseiro semi-flutuante em razão do risco de cisalhamento sob torque elétrico instantâneo, mas, por se tratar de veículo 4x4, o mesmo torque é transmitido também ao eixo dianteiro, ao diferencial dianteiro, aos eixos cardãs dianteiro e traseiro e, quando aplicável, às juntas homocinéticas dianteiras. É mandatória a verificação da capacidade desses componentes frente ao torque do motor elétrico especificado (seção 11.1) em todas as configurações de câmbio da matriz da seção 8.1, com reforço, upgrade ou limitação eletrônica adicional de torque em marchas baixas/reduzida quando a verificação indicar margem insuficiente, de forma análoga ao tratamento já dado ao eixo traseiro --- resultado a ser registrado no laudo técnico de engenharia (seção 19.3).
+
+BLOCO II: Adequação da Plataforma Mecânica e Estrutural (Pré-Requisitos)
+
+5. Sistema de Freios: Conversão a Disco como Pré-Requisito Estrutural
+
+5.1 Diagnóstico e Requisitos de Segurança
+
+A Toyota Bandeirante nunca saiu de fábrica com freio a disco nas quatro rodas. Somente os modelos fabricados a partir do final de 1995/1996 receberam freio a disco na dianteira, mantendo tambor na traseira. Todos os modelos anteriores a 1995 saíram de fábrica com freio a tambor nas quatro rodas, muitas vezes sem hidrovácuo nas versões mais antigas.
+
+5.2 Diretriz Técnica: Conversão Mandatória por Ano/Versão
+
+O plano não trata o freio a disco nas quatro rodas como equipamento pré-existente sobre o qual a frenagem regenerativa simplesmente atua. Trata-o como pré-requisito mecânico e estrutural obrigatório, orçado e executado antes ou em conjunto com a integração da frenagem regenerativa (seção 11.2), com escopo próprio de conversão, ramificado conforme a configuração original de fábrica do veículo doador:
+
+| Configuração Original de Fábrica | Escopo de Conversão Exigido |
+| --- | --- |
+| Tambor nas quatro rodas (anteriores a 1995/1996) | Conversão completa dianteira e traseira para disco, incluindo adaptação de cubos, mangas de eixo e sistema hidráulico. |
+| Disco dianteiro / tambor traseiro (pós-1995/1996) | Conversão apenas do eixo traseiro para disco. |
+| Freio mono-circuito ou duplo-circuito a tambor mais antigo (décadas de 60–70), sem hidrovácuo | Projeto de adaptação específico do circuito hidráulico e, quando aplicável, instalação de servofreio, previamente à conversão para disco. |
+
+5.3 Freio de Estacionamento: Solução Mecânica a Cabo nas Rodas Traseiras (e opção EPB)
+
+O sistema original de freio de estacionamento a tambor no cardã é corretamente identificado como problemático (vazamento de óleo da caixa de transferência sobre as lonas e perda de retenção se uma roda perder aderência), em 100% das versões de fábrica da Bandeirante. A solução de pinças mecânicas acionadas por cabo nas rodas traseiras pressupõe, no entanto, que o veículo já possui freio a disco na traseira --- o que não corresponde à realidade de fábrica de nenhuma versão da Bandeirante, que utiliza tambor traseiro na totalidade dos exemplares originais.
+
+**🔗 Vínculo Obrigatório com a Seção 5.2**
+
+A solução de pinça mecânica com acionamento por cabo nas rodas traseiras é mantida como diretriz de engenharia, porém condicionada e vinculada à execução da conversão de freio a disco traseiro descrita na seção 5.2 deste plano. O escopo e o orçamento de engenharia devem incluir explicitamente o kit de conversão de freio a disco traseiro com suporte a cabo de freio de mão, de forma que a solução de freio de estacionamento seja tecnicamente aplicável ao veículo convertido.
+
+Solução Principal: Pinças Mecânicas com Acionamento por Cabo
+
+Pinças de estacionamento mecânicas de acionamento a cabo (cable-actuated) instaladas nas rodas traseiras, com acionamento por alavanca manual --- solução independente de qualquer sistema elétrico (12V ou alta tensão).
+
+Menor complexidade de homologação: por não depender de módulo eletrônico, atuador ou software, o laudo técnico de freio de estacionamento é avaliado como sistema puramente mecânico, com histórico de aprovação consolidado na ITL.
+
+Manutenção simplificada: ajuste e substituição de componentes (cabo, sapatas/pastilhas) seguem procedimento mecânico convencional, sem necessidade de diagnóstico eletrônico especializado --- vantagem relevante para uso em expedições remotas.
+
+Torque de retenção dimensionado para as rampas de maior inclinação previstas no uso do veículo, eliminando as falhas do sistema original a tambor no cardã.
+
+Solução Opcional: EPB (Freio de Estacionamento Eletrônico)
+
+Pinças traseiras com atuador elétrico integrado (linha TRW/ZF ou kits de conversão EPB para disco traseiro), acionadas por botão no painel de instrumentos, oferecidas como opcional de conforto e automação (função hold em rampa integrada à VCU). Caso adotado, opera em paralelo ao sistema mecânico, que permanece como retenção de referência e backup independente de energia elétrica.
+
+Essa priorização reduz o escopo de itens elétricos sujeitos à vistoria de segurança veicular, mantendo a opção de EPB disponível para quem priorizar conforto operacional no uso diário --- sempre condicionada, em qualquer dos casos, à execução prévia ou concomitante da conversão de freio a disco traseiro (seção 5.2).
+
+5.4 Escopo Orçamentário
+
+O orçamento e o cronograma de engenharia devem prever a conversão de freios a tambor para disco como item de linha próprio, dimensionado conforme a configuração original de cada veículo doador (ver detalhamento de custos na seção 23), e não como custo incorporado implicitamente ao pacote de frenagem regenerativa. O escopo inclui, obrigatoriamente, o kit de conversão de freio a disco traseiro com suporte a cabo de freio de mão, condição necessária para viabilizar a solução de freio de estacionamento definida na seção 5.3.
+
+6. Eixo Traseiro: Upgrade Mandatório de Flutuante vs. Semi-Flutuante
+
+6.1 Diagnóstico
+
+As Bandeirantes mais antigas (décadas de 60 e 70) utilizaram eixos traseiros do tipo canela fina, semi-flutuantes. O torque elétrico instantâneo (acima de 400 Nm), típico de motores elétricos de 120–150 kW, pode causar cisalhamento das pontas de eixo e quebra do diferencial quando aplicado a um eixo semi-flutuante antigo, não dimensionado para esse regime de esforço.
+
+6.2 Diretriz Técnica: Upgrade Mandatório
+
+**⚠️ Pré-Requisito Estrutural Mandatório**
+
+Para qualquer conversão realizada em veículos que originalmente equiparam eixo traseiro semi-flutuante (canela fina), a substituição ou upgrade para eixo traseiro flutuante reforçado --- canela grossa, com pontas de eixo reforçadas --- é mandatória, e não opcional, como pré-requisito estrutural para receber o motor elétrico especificado no projeto.
+
+Veículos que já equipam eixo flutuante de fábrica seguem o escopo padrão de integração do motor elétrico à linha de tração, descrito na seção 8, sem necessidade de upgrade adicional deste componente. A verificação do tipo de eixo original (semi-flutuante ou flutuante) deve constar do levantamento de configuração descrito na seção 3, previamente à definição do orçamento e do cronograma de engenharia.
+
+7. Sistema de Direção: Adaptações por Ano de Fabricação (Hidráulica vs. EPS/EHPS)
+
+A direção hidráulica só se tornou item de série na Bandeirante a partir de 1993. Parcela relevante da frota circulante no Brasil possui direção mecânica seca, tipicamente com folga e caixa setor de rosca sem-fim. O plano estabelece, portanto, duas ramificações técnicas distintas, condicionadas ao ano de fabricação do veículo doador:
+
+Ramo A --- Modelos com Direção Hidráulica Original (pós-1993)
+
+Mantém-se a diretriz de referência do plano: acionamento por bomba eletro-hidráulica (EHPS) de 12V, preservando a caixa de direção hidráulica original do veículo. A única alteração é a substituição da bomba mecânica --- antes acionada por polia do motor diesel --- por uma bomba EHPS de 12V acionada sob demanda pela VCU.
+
+Redução de Alterações Estruturais: por não substituir a caixa de direção nem sua fixação ao chassi, esta solução evita furações, suportes adicionais ou alterações na coluna de direção, simplificando tanto a montagem quanto a análise de conformidade estrutural na vistoria.
+
+Bomba EHPS Dimensionada por Demanda: a bomba eletro-hidráulica opera com vazão variável conforme a velocidade do veículo e o ângulo de esterçamento, reduzindo o consumo do sistema auxiliar de 12V em relação a uma bomba de vazão fixa.
+
+Ramo B --- Modelos com Direção Mecânica Original (pré-1993)
+
+Duas alternativas de engenharia compõem o escopo para esta ramificação, a serem avaliadas conforme o estado do veículo doador e o orçamento do projeto:
+
+Alternativa B1 --- Instalação prévia de caixa de direção hidráulica: adaptação tradicional a partir de caixas de outras versões/veículos compatíveis, seguida da bomba EHPS de 12V já prevista no plano (idêntica à do Ramo A).
+
+Alternativa B2 --- Adaptação de coluna de direção com assistência elétrica (EPS) de baixa tensão: com recálculo do consumo do barramento de 12V do veículo para incorporar essa carga adicional.
+
+**⚠️ Recálculo Obrigatório do Sistema 12V**
+
+Em ambas as alternativas do Ramo B, o dimensionamento do sistema de baixa tensão (12V) do projeto deve ser recalculado antes da definição final da arquitetura elétrica auxiliar, de modo a acomodar a carga do sistema de direção assistida escolhido.
+
+O Sistema Elétrico de Direção Assistida (EPS) integral --- como substituição completa da caixa de direção com recolunagem --- é descartado como solução principal para o Ramo A por ampliar o escopo de alteração estrutural sem benefício proporcional para o perfil de uso do veículo já equipado de fábrica com direção hidráulica.
+
+**[MANDATÓRIO] **Preservação da Trava de Direção (Steering Lock): nas conversões que adotam a Alternativa B2 (adaptação de coluna de direção com assistência elétrica --- EPS), é mandatória a manutenção ou a reinstalação de trava de direção mecânica funcional na coluna adaptada, preservando o dispositivo antifurto de série exigido para o veículo, condição a ser explicitamente verificada no projeto de engenharia e no laudo técnico (seção 19.3).
+
+8. Transmissão e Interface Mecânica: Adaptações por Geração de Câmbio
+
+A motorização recomendada utiliza tecnologia fornecida e representada oficialmente no Brasil (parceria WEG / FuelTech ou linha Danfoss Editron / Hyper9 Dual), compatível com a arquitetura de 400V. Trata-se de um motor elétrico síncrono de ímã permanente ou de indução, com potência entre 120 kW e 150 kW (163 a 204 cv) e torque superior a 400 Nm.
+
+A frota de Bandeirantes não compartilha uma única configuração de câmbio. As primeiras versões nacionais, equipadas com o motor Mercedes-Benz OM-324 (1962–1973), foram entregues com câmbio de 3 marchas; o motor Mercedes-Benz OM-314 (1973–1989) manteve-se associado a câmbios de 4 marchas, inicialmente sem reduzida e, a partir de 1981, com caixa de transferência/reduzida acoplada. O motor Mercedes-Benz OM-364 (1989–1994) deu sequência a essa configuração de 4 marchas com reduzida. Somente a partir de 1993 --- já dentro do período de produção do OM-364 e mantida na versão com motor Toyota 14B (1994–2001) --- o modelo passou a receber, como mudança independente da motorização, o câmbio de 5 marchas sincronizado com caixa de transferência/reduzida acoplada. Por essa razão, o plano não assume a manutenção de um câmbio único de 4 ou 5 marchas com reduzida para todas as versões; em seu lugar, adota-se a matriz de compatibilidade por período de fabricação a seguir:
+
+8.1 Matriz de Compatibilidade de Câmbio (3M, 4M s/ red., 4M c/ red., 5M)
+
+| Configuração de Câmbio Original | Período / Motorização Associada | Diretriz Técnica de Interface |
+| --- | --- | --- |
+| 3 marchas (sem reduzida) | 1962–1973 --- motor MB OM-324 | Requer projeto próprio de placa adaptadora (bellhousing) e eixo estriado (spline) específico; ou swap obrigatório para caixa mais moderna com reduzida. |
+| 4 marchas sem reduzida | 1973 a 1981 --- motor MB OM-314, antes da adoção da reduzida | Requer adaptador dedicado e avaliação da viabilidade de manter a caixa original frente à ausência de reduzida; alternativa de swap para versão com reduzida. |
+| 4 marchas com reduzida | 1981 a 1993 --- motores MB OM-314 (até 1989) e OM-364 (1989–1993), com caixa de transferência | Adaptador específico compatível com o eixo estriado desta geração. |
+| 5 marchas com reduzida | Pós-1993 --- motores MB OM-364 e Toyota 14B (1994–2001) | Configuração de referência do plano, com adaptador otimizado para máxima eficiência de acoplamento ao motor elétrico. |
+
+Para cada uma das quatro configurações listadas, o plano exige o desenvolvimento (ou aquisição) de um conjunto adaptador dedicado --- placa bellhousing e eixo estriado compatível --- dimensionado ao torque do motor elétrico definido para o projeto. Alternativamente, o plano autoriza, como opção padrão recomendada, o swap obrigatório da caixa de câmbio original por uma unidade de 4 marchas com reduzida ou 5 marchas, de forma a padronizar a interface mecânica e viabilizar a tração 4x4 com maior eficiência de uso do motor elétrico. A decisão entre adaptação in situ e swap deve ser tomada veículo a veículo, previamente ao início da conversão, e registrada no laudo técnico do projeto.
+
+8.2 Projeto de Interface (Placa Adaptadora, Eixo Estriado, Volante e Embreagem)
+
+Placa Adaptadora (Bellhousing): usinada em alumínio naval sob medida em CNC, com centralização por rebaixo (spigot) usinado nas tolerâncias do bloco do câmbio da geração aplicável, garantindo alinhamento concêntrico entre o eixo do motor e o eixo primário da transmissão.
+
+Disco e Platô de Embreagem: conjunto de embreagem original (ou de reposição equivalente) mantido como elemento de acoplamento e amortecimento torcional, evitando transmitir picos de torque instantâneo diretamente aos dentes da engrenagem primária do câmbio.
+
+Eixo Estriado Adaptador (Spline Adapter): usinado para compatibilizar o diâmetro e o passo de estrias do eixo do motor elétrico com o cubo do disco de embreagem, específico para cada uma das quatro gerações de câmbio da matriz acima, sem alteração dimensional da caixa de câmbio.
+
+Volante de Inércia Adaptado (Flywheel): balanceado dinamicamente em conjunto com o rotor do motor para eliminar vibrações harmônicas em toda a faixa de rotação de operação (0–6.000 RPM).
+
+Limitação Eletrônica de Torque na Primeira Marcha e Reduzida: parametrização na VCU/inversor para limitar a taxa de aplicação de torque (torque ramp-rate) nas relações mais curtas, protegendo os dentes de engrenagem e os componentes do diferencial contra choques de torque elétrico instantâneo --- especialmente crítico nas configurações de câmbio mais antigas (3 e 4 marchas sem reduzida).
+
+Sensor de Posição e Interlock de Embreagem: sensor de curso do pedal de embreagem integrado à VCU, permitindo trocas de marcha assistidas com corte momentâneo de torque do motor elétrico (função sincronizada de shift-cut).
+
+9. Suspensão e Geometria do Chassi: Recalibração para Carga Estática do Pack
+
+O acréscimo de massa estática decorrente do pack de baterias e da caixa metálica de proteção (seção 12) altera a distribuição de peso original do veículo, tanto em repouso quanto em movimento, sobre os eixos dianteiro e traseiro e sobre a suspensão — efeito mais crítico nas versões de Chassi Curto e já sinalizado como ponto de atenção nas desvantagens do projeto (seção 4). Este capítulo estabelece as diretrizes de reforço estrutural da suspensão e de correção da geometria do chassi necessárias para absorver essa carga adicional sem comprometer a dirigibilidade em estrada, a capacidade off-road ou a vida útil dos componentes, sendo pré-requisito de execução física assim como a conversão de freios (seção 5) e o upgrade do eixo traseiro (seção 6).
+
+9.1 Reforço do Feixe de Molas e Amortecedores de Maior Carga
+
+Diagnóstico de Carga Estática Adicional: massa estimada do pack de baterias e da caixa metálica de proteção entre 500 e 750 kg nas versões Jipe Curto (60–75 kWh) e entre 800 e 1.000 kg nas versões Perua e Picape (90–100 kWh), conforme configuração da seção 12.1; valores de projeto a confirmar por pesagem individual do veículo doador antes e depois da conversão.
+
+Reforço do Feixe de Molas de Lâminas: recalibração do feixe original por adição de lâmina mestra de reforço (booster leaf) dimensionada ao acréscimo de carga por eixo, ou substituição integral por feixe parabólico progressivo de maior capacidade, mantendo a altura de rodagem de projeto com o pack instalado e preservando curso residual de suspensão para uso off-road e carga adicional de expedição (bagageiro, tanque de água, equipamentos).
+
+Substituição dos Amortecedores: amortecedores a gás de maior curso e maior capacidade de carga (heavy-duty), com válvulas recalibradas para o novo peso springado/não springado, priorizando modelos com reservatório externo para dissipação térmica em uso off-road prolongado; recomenda-se o uso de amortecedores ajustáveis para permitir ajuste fino após a pesagem real do veículo convertido.
+
+Critério de Aceitação (Anti-Sagging): após a instalação, a altura de rodagem dianteira e traseira deve permanecer dentro de tolerância de ±10 mm em relação à especificação original, verificada tanto com o veículo vazio quanto carregado, de forma a eliminar o efeito de arriamento (sagging) e a perda de dirigibilidade.
+
+Requisito de Ensaio: pesagem por eixo em balança rodoviária antes e depois da conversão, com o resultado documentado no laudo técnico de engenharia (seção 19.3), validando que a distribuição de peso por eixo atende aos limites estruturais do chassi e aos requisitos da vistoria de segurança veicular em ITL (seção 18).
+
+Buchas e Articulações: substituição das buchas do feixe de molas, da barra estabilizadora e dos amortecedores por componentes de poliuretano ou borracha reforçada compatíveis com a maior carga, reduzindo folgas e preservando a precisão de geometria ao longo do tempo.
+
+**[MANDATÓRIO] **Capacidade de Carga de Pneus e Rolamentos de Roda: verificação do índice de carga (load index) dos pneus e da capacidade nominal dos rolamentos de roda dianteiros e traseiros frente ao acréscimo de massa do pack de baterias e da caixa metálica de proteção; quando o índice de carga original for insuficiente para o novo peso por eixo, é mandatória a substituição por pneus e/ou rolamentos de maior capacidade, com o resultado da verificação registrado no laudo técnico de engenharia (seção 19.3), junto à pesagem por eixo prevista neste capítulo.
+
+9.2 Ajuste de Geometria, Ângulos de Cáster e Manutenção dos Ângulos Off-Road
+
+Ângulo de Cáster: recalibração do ângulo de cáster (incremento típico de 0,5° a 1,5° em relação ao original, conforme o kit de suspensão adotado) para compensar a redistribuição de peso e preservar o retorno automático de direção e a estabilidade em velocidade de estrada, item especialmente relevante para os dois ramos do sistema de direção descritos na seção 7.
+
+Cambagem: verificação e ajuste da cambagem dianteira dentro da tolerância original de fábrica (tipicamente 0° a -0,5°), evitando desgaste irregular dos pneus em consequência do acréscimo de peso sobre o eixo dianteiro.
+
+Vão Livre do Solo e Ângulos Off-Road: manutenção do vão livre e dos ângulos de ataque, saída e rampa (ver recomendações da seção 4) com o veículo em condição de carga real — peso combinado do pack de baterias e do equipamento típico de expedição — e não apenas na condição de veículo vazio.
+
+Alinhamento Pós-Instalação: alinhamento de direção e geometria realizado exclusivamente após a instalação completa do pack de baterias, com nova verificação obrigatória após os primeiros 1.000 km de rodagem, período em que ocorre a acomodação inicial do feixe de molas reforçado.
+
+Registro em Laudo Técnico: os valores finais de cáster, cambagem, convergência e altura de rodagem, medidos com o veículo carregado, devem constar no laudo técnico de engenharia do projeto (seção 19.3), como evidência de que a geometria original de fábrica foi preservada dentro das tolerâncias aplicáveis.
+
+**[MANDATÓRIO] **Capacidade de Carga da Caixa de Direção e dos Terminais/Mangas de Eixo Dianteiros: verificação da capacidade estrutural da caixa de direção (Ramo A/B1) ou da coluna EPS (Ramo B2 --- seção 7), dos terminais de direção (tie rods) e das mangas de eixo dianteiras frente ao acréscimo de peso sobre o eixo dianteiro decorrente do módulo frontal de bateria (seção 12.2), com substituição por componentes de maior capacidade quando a verificação indicar margem insuficiente, evitando falha por fadiga em uso rodoviário e off-road.
+
+BLOCO III: Arquitetura de Eletrificação, Powertrain e Eletrônica
+
+10. Arquitetura Elétrica de Alta Tensão (Padrão 400V)
+
+O projeto define 400V como a arquitetura elétrica preferencial para o barramento de alta tensão, em detrimento de arquiteturas de tensão mais elevada (800V), pelos seguintes motivos:
+
+Disponibilidade de Componentes no Brasil: motores, inversores, OBCs, contatores e conectores em 400V possuem representação comercial estabelecida no país, reduzindo prazos de importação e dependência de fornecedores exclusivamente internacionais.
+
+Manutenção e Suporte Técnico Local: a base instalada de veículos elétricos e híbridos em 400V no mercado nacional já formou uma rede de oficinas e técnicos habilitados para diagnóstico e reparo, o que não ocorre de forma equivalente para arquiteturas de 800V.
+
+Compatibilidade com Infraestrutura de Recarga: carregadores AC Tipo 2 e estações DC (CCS2) disponíveis no Brasil operam nativamente na faixa de 400V, dispensando conversores adicionais de compatibilidade.
+
+Maturidade para Aplicação Off-Road: componentes 400V já validados em aplicações veiculares pesadas oferecem histórico de robustez compatível com o uso severo (trilhas, longas distâncias) a que o veículo Bandeirante será submetido.
+
+Essa definição orienta a especificação de todos os subsistemas de tração e segurança elétrica descritos a seguir, aplicável de forma uniforme a todas as versões e anos de fabricação da Bandeirante contemplados por este plano.
+
+11. Motorização Elétrica, Inversor e Unidade de Controle do Veículo (VCU)
+
+A motorização recomendada utiliza tecnologia fornecida e representada oficialmente no Brasil (parceria WEG / FuelTech ou linha Danfoss Editron / Hyper9 Dual), compatível com a arquitetura de 400V. Trata-se de um motor elétrico síncrono de ímã permanente ou de indução, com potência entre 120 kW e 150 kW (163 a 204 cv) e torque superior a 400 Nm.
+
+11.1 Especificação do Powertrain
+
+Motor: síncrono de ímã permanente ou de indução, 120–150 kW, 400V, torque > 400 Nm.
+
+Inversor: 400V, compatível com o motor especificado, com capacidade de regeneração e controle vetorial.
+
+Placa Adaptadora Motor–Câmbio: usinada em alumínio naval, CNC, específica por geração de câmbio (seção 8.2).
+
+Eixo Estriado Adaptador: compatibilização do eixo do motor com o cubo do disco de embreagem, específico por geração.
+
+Volante de Inércia Adaptado: balanceado dinamicamente com o rotor do motor (0–6.000 RPM).
+
+Limitação Eletrônica de Torque: parametrização na VCU/inversor para proteger câmbios antigos (ramp-rate nas relações curtas).
+
+Sensor de Posição e Interlock de Embreagem: shift-cut assistido pela VCU.
+
+11.2 Unidade de Controle do Veículo (VCU) e Estratégia de Controle
+
+O projeto incorpora uma VCU (Vehicle Control Unit) dedicada, compatível com a arquitetura 400V, atuando como cérebro central da eletrificação e árbitro entre os subsistemas de tração, frenagem, segurança HV e periféricos:
+
+Gestão de Torque: interpretação do sinal do pedal do acelerador (por fio, com sensor duplo redundante) e cálculo do torque solicitado ao inversor, aplicando limitação em função da marcha engatada, da configuração de câmbio da matriz da seção 8.1, temperatura dos componentes e estado de carga (SOC) das baterias.
+
+Arbitragem de Segurança HV: recebimento contínuo dos sinais de HVIL, contatores, IMD e temperaturas críticas, com autoridade para interromper a tração e abrir o sistema HV em caso de falha, independentemente do estado do inversor.
+
+Sequenciamento de Energização (Power-Up/Power-Down): controle da sequência de pré-carga, fechamento de contatores, habilitação do inversor e liberação de tração somente após todas as checagens de segurança serem validadas; sequência inversa e ordenada no desligamento.
+
+Integração com Freio Regenerativo: coordenação entre a frenagem regenerativa do motor elétrico e o sistema de freios a disco (ver conversão mandatória na seção 5.2), modulando o torque de regeneração conforme a posição do pedal de freio, o SOC da bateria e a aderência estimada (especialmente relevante em piso de terra/lama).
+
+Gerenciamento Térmico: atuação sobre bombas de líquido de arrefecimento, ventiladores e válvulas do circuito térmico, conforme descrito na seção 14.
+
+Diagnóstico e Registro de Falhas (DTC/Datalogger): monitoramento de todos os subsistemas com registro de códigos de falha, essencial tanto para manutenção preventiva quanto para a documentação exigida na vistoria de segurança veicular.
+
+Interface com o Painel de Instrumentos: exibição de SOC, autonomia estimada, potência instantânea, alertas de isolamento e status de segurança HV ao condutor (ver seção 15.1).
+
+12. Dimensionamento e Layout dos Módulos de Bateria por Versão de Carroçaria
+
+Testes práticos e coeficientes de arrasto em velocidades de cruzeiro moderadas (80–90 km/h) demonstram que a Bandeirante apresenta consumo médio de 280 Wh/km a 330 Wh/km. A química LFP (Lítio-Ferro-Fosfato) foi escolhida por não sofrer risco de degradação acelerada sob carga completa, não apresentar risco de incêndio por perfuração mecânica em trilhas e oferecer vida útil superior a 3.500 ciclos de carga.
+
+A Bandeirante foi produzida em entre-eixos e carroçarias distintos, com disponibilidade de espaço muito diferente entre versões: o Chassi Curto / Jipe (OJ50, OJ55, OJ50L, BJ50) tem espaço sob o assoalho, entre longarinas e entre-eixos extremamente reduzido; o Chassi Longo / Perua (OJ54, BJ54, BJ55) dispõe de espaço maior sob o assoalho; e as versões Picape Cabine Simples e Cabine Dupla possuem espaços distintos disponíveis sob a caçamba e para tanques. Um layout único de pack de 90–100 kWh em três módulos não é fisicamente compatível com a versão Jipe Curto sem comprometer severamente o vão livre do solo ou invadir o habitáculo de passageiros. O plano estabelece, portanto, duas configurações de pack distintas:
+
+12.1 Configuração LFP (60–75 kWh no Jipe vs. 90–100 kWh na Perua/Picape)
+
+| Versão de Carroçaria | Capacidade do Pack | Distribuição em Módulos / Observação |
+| --- | --- | --- |
+| Jipe Curto (OJ50 / OJ55 / OJ50L / BJ50) | 60 a 75 kWh | 2 módulos: cofre dianteiro e porta-malas/compartimento de carga interno. Autonomia reduzida aceita como trade-off em favor da integridade estrutural e do vão livre do solo. |
+| Perua Longa e Picapes (Cabine Simples e Dupla) | 90 a 100 kWh | 3 módulos: frontal (≈30%), central (≈40%), traseiro (≈30%). Atinge com segurança a meta de autonomia de 300 km em estrada. |
+
+**⚠️ Regra de Verificação Obrigatória**
+
+Todo projeto de conversão deve identificar previamente a versão de entre-eixos e carroçaria do veículo doador para selecionar a configuração de módulos aplicável. É vedada a aplicação do layout de 3 módulos de 90–100 kWh a unidades de Chassi Curto sem estudo específico de viabilidade estrutural.
+
+12.2 Layout Físico dos Módulos no Chassi (2 vs. 3 Módulos)
+
+Para otimizar o centro de gravidade e a distribuição de peso por eixo --- requisito avaliado na vistoria de segurança veicular ---, o pack é dividido em módulos independentes, interligados por barramento HV e monitorados por um BMS mestre com BMS satélites:
+
+Distribuição em Três Módulos (Perua Longa e Picapes)
+
+Módulo Frontal (≈30% da capacidade): instalado no compartimento dianteiro, no espaço liberado pela remoção do motor a diesel e periféricos associados, compensando parte do peso removido do trem de força original.
+
+Módulo Central (≈40% da capacidade): instalado sob o assoalho, entre as longarinas do chassi, na posição de menor altura em relação ao solo, concentrando a maior fração de massa próxima ao centro de gravidade do veículo para máxima estabilidade lateral.
+
+Módulo Traseiro (≈30% da capacidade): instalado à frente do eixo traseiro, na região do antigo tanque de combustível/reservatórios, mantendo a leitura equilibrada entre eixo dianteiro e traseiro em vazio e carregado.
+
+Distribuição em Dois Módulos (Jipe Curto)
+
+Nas unidades de Chassi Curto, a distribuição tripartida é substituída por dois módulos --- cofre dianteiro e porta-malas/compartimento de carga interno --- monitorados por um BMS mestre com dois BMS satélites, priorizando a preservação do vão livre do solo e dos ângulos de trilha originais do veículo em detrimento da capacidade máxima de energia embarcada.
+
+Em ambas as configurações, a distribuição multi-módulo reduz a altura individual de cada caixa de bateria (facilitando o ângulo de saída e a garantia de vão livre do solo em trilhas), permite manutenção modular (substituição de um módulo sem desmontagem total do pack) e possibilita isolamento elétrico independente por módulo em caso de falha localizada.
+
+13. Segurança Elétrica HV, Proteção Ambiental e Contenção Térmica
+
+13.1 Requisitos Mínimos (HVIL, IMD, Pré-carga, Desconector, IP67/IP68, Skid Plates)
+
+Os oito requisitos abaixo constituem o conjunto mínimo obrigatório de segurança elétrica do sistema HV, aplicável de forma uniforme a todas as versões e anos de fabricação da Bandeirante:
+
+| Requisito | Descrição / Função de Segurança | Momento de Verificação |
+| --- | --- | --- |
+| HVIL (High Voltage Interlock Loop) | Malha de interlock em baixa tensão que percorre conectores, tampas e junções do sistema HV; a abertura de qualquer ponto força a VCU a abrir os contatores principais antes que um técnico possa tocar em um terminal vivo. | Todo power-up e testes de comissionamento |
+| IMD (Insulation Monitoring Device) | Monitor de isolamento entre o barramento HV e o chassi/terra, com alarme e comando de abertura dos contatores em caso de queda de resistência abaixo do limiar de segurança. | Monitoramento contínuo em operação |
+| Circuito de Pré-Carga | Contator de pré-carga em série com resistor de potência, carregando gradualmente os capacitores do barramento DC antes do fechamento do contator principal, evitando pico de inrush. | Validado no comissionamento HV de bancada |
+| Desconector de Serviço (Service Disconnect) | Dispositivo de isolamento físico manual do pack de baterias, posicionado em local acessível para uso obrigatório antes de qualquer manutenção no sistema HV. | Etapa do procedimento de desenergização (seção 20) |
+| Proteção IP67/IP68 do Sistema HV | Invólucros e conectores do pack, inversor e OBC com grau de proteção mínimo IP67 contra poeira e imersão temporária. | Verificado em vistoria e inspeção pré-expedição |
+| Identificação de Cabos HV | Cabeamento com cobertura laranja padrão automotivo e conectores travados, permitindo identificação inequívoca do circuito de alta tensão. | Requisito de projeto e de vistoria ITL |
+| Desconexão Automática Pós-Colisão | Sinal de colisão (acelerômetro dedicado ou barramento do sistema de airbag/pré-tensionador) recebido pela VCU, comandando a abertura dos contatores principais e o corte do inversor de forma independente do HVIL. | Validado em ensaio de bancada e verificado na vistoria ITL |
+| Barreira de Propagação Térmica | Anteparo termicamente resistente (mica, cerâmica ou material equivalente) entre o(s) módulo(s) de bateria e o assoalho do habitáculo, retardando a entrada de calor, fumaça ou chama no compartimento de passageiros. | Verificado em projeto executivo e inspeção pré-expedição |
+
+Complementarmente, uma malha de equalização de potencial (bonding) de baixa impedância interliga as carcaças do motor, inversor, OBC, caixas de bateria e chassi, com resistência de bonding verificada no comissionamento HV de bancada, prevenindo diferença de potencial perigosa entre partes metálicas condutoras em caso de falha de isolamento. Todo o cabeamento de alta tensão utiliza cobertura na cor laranja segundo padrão automotivo, com conectores travados e blindagem contra EMI, permitindo identificação inequívoca por qualquer técnico, inclusive em contexto de resgate ou manutenção emergencial em campo.
+
+**[MANDATÓRIO] **Proteção do Cabeamento HV contra Flexão do Chassi em Uso Off-Road: o chassi tipo escada da Bandeirante apresenta flexão e torção relativa significativas entre longarinas, carroçaria e eixos durante a articulação off-road. A ancoragem, o comprimento de folga (dressagem do chicote) e os pontos de fixação do cabeamento de alta tensão devem ser dimensionados para acompanhar esse movimento relativo sem tracionar os conectores nem fadigar a isolação, com verificação específica em bancada de simulação de articulação ou em teste de campo com instrumentação de deformação do cabo antes da liberação para uso off-road.
+
+**[MANDATÓRIO] **Profundidade Máxima de Vau (Fording Depth) Compatível com a Vedação HV: definição formal, em projeto executivo, da profundidade máxima de vau (travessia de água) compatível com a vedação IP67/IP68 certificada dos módulos de bateria, do inversor, do OBC e dos conectores HV, considerando a posição mais baixa desses componentes no veículo montado. O valor definido deve constar do manual do proprietário (seção 20) e do cartão de resgate de emergência (seção 20), e ser respeitado como limite operacional em uso off-road e em expedições.
+
+13.2 Proteção Contra Colisão, Aterramento (Bonding) e Isolação Térmica
+
+Desconexão Automática Pós-Colisão: sinal de colisão (acelerômetro dedicado ou barramento do sistema de airbag/pré-tensionador) integrado à VCU, comandando a abertura dos contatores principais e o corte do inversor de forma independente do HVIL, reduzindo o risco de choque elétrico para ocupantes e equipes de resgate imediatamente após um impacto.
+
+Barreira de Propagação Térmica: anteparo termicamente resistente entre cada módulo de bateria e o assoalho do habitáculo, retardando a entrada de calor, fumaça ou chama no compartimento de passageiros em caso de falha térmica localizada em uma célula, e ganhando tempo para evacuação do veículo.
+
+Equalização de Potencial (Bonding) do Chassi: malha de aterramento de baixa impedância interligando carcaças do motor, inversor, OBC, caixas de bateria e chassi, com resistência de bonding verificada no comissionamento HV, evitando diferença de potencial perigosa entre partes metálicas em caso de falha de isolamento.
+
+Extintor e Cartão de Resgate a Bordo: extintor de classe adequada a incêndio em baterias de íon-lítio/LFP mantido a bordo, e "cartão de resgate" (rescue sheet) fixado em local visível, indicando à equipe de resgate a localização do desconector de serviço, dos módulos de bateria e dos pontos de corte estrutural seguros do veículo.
+
+Revisão de Segurança Funcional da VCU: as funções da VCU com impacto direto em segurança do ocupante (arbitragem HV, corte de torque, coordenação da frenagem regenerativa e desconexão pós-colisão) devem ser tratadas com o mesmo rigor de uma análise de segurança funcional (inspirada na abordagem da ISO 26262), com validação documentada antes da liberação para testes de pista.
+
+**[RECOMENDADO] **Sistema de Supressão Automática de Incêndio no Compartimento de Baterias: avaliação de sistema de supressão automática (aerossol ou equivalente) dedicado ao compartimento de baterias, como camada adicional ao extintor portátil e à barreira de propagação térmica já previstos (seção 13.1), especialmente recomendado para uso em expedições remotas com tempo de resposta de socorro prolongado.
+
+Esses itens devem ser detalhados no esquemático elétrico definitivo (seção 17.2) e verificados explicitamente no laudo técnico de engenharia elaborado para a ART (seção 19).
+
+14. Gerenciamento Térmico, Climatização e Periféricos
+
+O gerenciamento térmico é tratado como sistema integrado com três circuitos independentes, dimensionados para operação em condições severas (trilhas, baixa velocidade com alta carga térmica, clima quente) e em viagens de longa duração em velocidade de cruzeiro sustentada:
+
+Circuito de Baterias
+
+Placas frias (cold plates) líquido-refrigeradas em contato com a base de cada módulo de bateria (dois ou três módulos, conforme a versão de carroçaria --- seção 12.1), com circuito independente dos circuitos de motor/inversor para manter a química LFP na faixa ótima de operação (aproximadamente 15°C–35°C).
+
+Aquecimento auxiliar (PTC) para pré-condicionamento em baixas temperaturas, evitando restrição de potência de carga e descarga em climas frios.
+
+Sensores de temperatura distribuídos por célula/módulo, reportados ao BMS e à VCU, com estratégia de derating (redução de potência) progressivo antes de atingir limites críticos.
+
+Circuito de Motor e Inversor
+
+Circuito líquido-refrigerado de média temperatura, compartilhado entre o motor elétrico e o inversor, com radiador dedicado de fluxo cruzado posicionado na dianteira (aproveitando a abertura original da grade).
+
+Bomba elétrica de circulação com controle por PWM, modulada pela VCU conforme a temperatura do IGBT/SiC do inversor e do enrolamento do motor.
+
+Ventilador elétrico auxiliar para situações de baixa velocidade com alta demanda de torque (ex.: reduzida em subida de trilha), quando o fluxo de ar natural é insuficiente.
+
+Estratégia de Priorização Térmica
+
+A VCU arbitra a prioridade entre os circuitos em condições de estresse térmico combinado (ex.: subida prolongada em reduzida seguida de recarga rápida), priorizando a proteção das células de bateria e aplicando derating de potência de tração antes de permitir qualquer risco térmico ao pack.
+
+Climatização e Periféricos
+
+O compressor mecânico do ar-condicionado original (quando presente) é substituído por um compressor elétrico hermético alimentado pelo barramento de alta tensão (400V). O hidrovácuo dos freios passa a ser alimentado por uma bomba de vácuo elétrica dedicada com reservatório de vácuo e sensor de depressão automatizado --- item de especial relevância para os veículos anteriores a meados dos anos 90, cujo sistema de freio original mono ou duplo-circuito muitas vezes não possuía hidrovácuo de fábrica (ver seção 5.2).
+
+15. Interface do Condutor (HMI), Painel de Instrumentos e Porta de Recarga
+
+A desativação do motor a diesel original inutiliza os mostradores analógicos de pressão de óleo, temperatura do motor e nível de combustível, bem como as luzes de alerta associadas do painel original. Este capítulo estabelece o padrão de conversão do painel de instrumentos para leitura das grandezas elétricas do novo powertrain, alimentado pelos dados da VCU (seção 11.2), bem como a especificação física e elétrica da porta de recarga, itens complementares à especificação técnica completa (BOM) da seção 17.1.
+
+15.1 Conversão/Adaptação do Cluster de Instrumentos (Leitura de SOC, Temperaturas e Alertas CAN)
+
+Padrão de Conversão do Cluster — Opção A (Visual Clássico): reaproveitamento dos manômetros analógicos originais de pressão de óleo, temperatura e combustível, convertidos internamente para atuação por motor de passo (stepper) comandado por sinal CAN, preservando integralmente a estética de época do painel; recomendado para projetos com ênfase em preservação histórica.
+
+Padrão de Conversão do Cluster — Opção B (Display Digital Discreto): instalação de um display digital complementar embutido no porta-luvas ou no console central, mantendo o painel original apenas como peça estática de acabamento; recomendado quando se prioriza densidade de informação sobre fidelidade visual.
+
+Fonte de Dados: leitura das grandezas exibidas diretamente do barramento CAN da VCU (interface descrita na seção 11.2), sem necessidade de fiação analógica dedicada adicional entre os sensores e o painel.
+
+Grandezas Mínimas Obrigatórias de Exibição: estado de carga — SOC (%) — e autonomia estimada (km); temperatura do pack de baterias e do inversor; potência instantânea de tração e de regeneração (kW); status do sistema de segurança HV, incluindo alerta de isolamento (IMD) e estado do HVIL (seção 13.1); código de falha ativo (DTC) com indicação luminosa; e status do freio de estacionamento (seção 5.3).
+
+Reaproveitamento dos Indicadores Originais: os mostradores substituídos podem ser redirecionados como luzes de alerta com nova função — por exemplo, a luz de ‘pressão de óleo’ original reconfigurada como alerta de falha de isolamento elétrico, e a luz de ‘temperatura’ reconfigurada como alerta de sobreaquecimento do pack ou do inversor — preservando a familiaridade visual do painel de época com nova função elétrica.
+
+Homologação: a conversão do painel deve ser registrada no laudo técnico de engenharia (seção 19.3) e atender aos requisitos de instrumentação exigidos na vistoria de segurança veicular em ITL (seção 18).
+
+15.2 Instalação Física da Porta CCS2/Tipo 2 e Sistema de Trava Elétrica do Plugue
+
+Localização Física do Bocal de Recarga — Opção A: aproveitamento do bocal original do tanque de combustível diesel, preservando a aparência externa original do veículo e o ponto de acesso já existente na carroçaria.
+
+Localização Física do Bocal de Recarga — Opção B: instalação na grade dianteira, com melhor acesso e visibilidade em postos de recarga, recomendada para uso predominante em expedição e operação em comboio.
+
+Padrão do Conector: Tipo 2 (AC) / CCS2 (DC), compatível com o carregador de bordo (OBC) especificado no BOM — 11 kW, Dual AC Tipo 2 + CCS2 (seção 17.1) — com tampa articulada de grau de proteção mínimo IP54 contra poeira e água em uso off-road.
+
+Suporte de Fixação Estrutural: reforço metálico soldado ou aparafusado ao chassi ou à carroçaria, conforme a localização escolhida, dimensionado para suportar o peso do cabo de recarga e os esforços de manuseio repetido sem fadiga da lataria, evitando o uso da chapa da carroçaria original como único ponto de fixação.
+
+Trava Elétrica do Plugue (Connector Lock): mecanismo de travamento por solenoide, integrado ao OBC/VCU e alinhado aos requisitos de sistemas de recarga condutiva da norma ABNT NBR IEC 61851 (seção 18), mantendo o conector travado mecanicamente durante todo o fluxo de corrente de carga e liberando-o apenas após o encerramento seguro da sessão ou por comando de emergência — exigência de segurança que evita desconexão acidental sob corrente, com risco de arco elétrico e degradação dos contatos.
+
+Sinalização de Status: LED indicador de status de carga (aguardando, carregando, completo ou falha) integrado junto ao bocal e visível pelo lado externo do veículo.
+
+16. Critérios de Fornecedores e Plano Logístico de Recarga
+
+16.1 Critérios de Especificação de Fornecedores
+
+A escolha de fabricantes e representantes para os componentes críticos do projeto (motor, inversor, VCU, BMS, OBC, sistema de segurança HV) segue três critérios obrigatórios de qualificação:
+
+Representação Oficial no Brasil: o fornecedor deve possuir representação comercial formal no país, com nota fiscal nacional e canal técnico de suporte em português.
+
+Estoque Nacional de Peças de Reposição: disponibilidade de estoque local para os itens críticos (contatores, fusíveis HV, sensores, módulos de BMS), evitando prazos de importação em caso de reparo --- especialmente relevante para uso em expedições remotas.
+
+Suporte Pós-Venda: existência de rede de assistência técnica ou canal direto de suporte para diagnóstico remoto e fornecimento de firmware/atualizações da VCU e do BMS.
+
+Esses três critérios são aplicados como filtro de qualificação antes da cotação formal de cada fornecedor, conforme detalhado na especificação técnica (BOM) da seção 17.1.
+
+16.2 Plano de Logística de Recarga para Expedições
+
+Para realizar expedições ou viagens longas, é preciso considerar que a infraestrutura de recarga rápida DC nem sempre está disponível ao longo do trajeto, especialmente fora dos grandes eixos rodoviários e em países vizinhos. Por esta razão, adota-se a estratégia de recarga em 4 níveis, organizados por ordem de preferência e redundantes entre si:
+
+Nível 1 --- Carregamento Rápido DC (CCS2 Combo): utilização de eletropostos rodoviários com conector CCS2 Combo, compatível com a arquitetura 400V do projeto, priorizado sempre que disponível ao longo da rota, por oferecer o menor tempo de recarga.
+
+Nível 2 --- Carregador On-Board (OBC) 11 kW AC trifásico: recarga em pontos AC trifásicos (postos, pousadas, oficinas, residências com ligação trifásica), utilizando o OBC dedicado especificado na seção 17.1, indicado como solução principal em pernoites e paradas mais longas.
+
+Nível 3 --- Kit de Cabos Móveis Industriais Ajustáveis (8A a 32A): kit portátil com conectores padrão Stecker / IEC 60309, comuns em postos de combustível, oficinas mecânicas e instalações industriais, permitindo recarga adaptativa em tomadas industriais monofásicas ou trifásicas de diferentes amperagens quando não houver eletroposto dedicado.
+
+Nível 4 --- Modo Emergencial em Tomada Doméstica (110V ou 220V): recarga lenta em tomada residencial comum, como último recurso em situações de emergência ou isolamento prolongado, garantindo autonomia mínima suficiente para alcançar o próximo ponto de recarga de nível superior.
+
+Recomenda-se que o kit de cabos móveis e os adaptadores de nível 3 e 4 sejam mantidos permanentemente a bordo em expedições ou viagens longas, junto ao kit de peças críticas definido na seção 20, dado o tempo de resposta logístico em regiões remotas.
+
+17. Especificação Técnica Completa (BOM) e Diagramas Elétricos Simplificados
+
+17.1 Especificação Técnica Completa (BOM)
+
+A tabela consolida a lista de materiais (Bill of Materials) do projeto, servindo como referência única para cotação, montagem e reposição futura. Itens marcados com asterisco (*) são específicos de uma ramificação técnica (versão de câmbio, carroçaria ou configuração de freio/direção original) e devem ser selecionados conforme o levantamento de configuração do veículo doador (seção 3).
+
+Nota de Revisão --- Conciliação BOM x Orçamento: esta BOM foi conferida item a item contra a relação de documentos para cotação (seção 23.2.1). Três itens listados nesta BOM não possuíam linha própria no orçamento detalhado e foram incluídos na seção 23.2.1: a bateria auxiliar 12V, o cabeamento HV como item de material (distinto da mão de obra de instalação já orçada na seção 23.2.2) e o kit de swap de câmbio, como alternativa opcional à placa adaptadora quando o veículo doador optar por essa rota (seção 8.1). Os demais itens desta BOM já estavam corretamente refletidos, de forma agregada, nas linhas "Adaptação Mecânica e Suportes", "Sistema de Segurança HV", "Sistema de Gerenciamento Térmico" e "Sistema de Direção" da seção 23.2.1.
+
+| Componente | Especificação | Fabricante / Representante | Quantidade |
+| --- | --- | --- | --- |
+| Motor Elétrico | Síncrono/indução, 120–150 kW, 400V | WEG / Danfoss Editron / FuelTech | 1 un. |
+| Inversor de Tração | 400V, compatível com o motor | WEG / Danfoss / FuelTech | 1 un. |
+| Placa Adaptadora Motor–Câmbio* | Usinada em alumínio naval, CNC --- específica para 3M, 4M s/red., 4M c/red. ou 5M c/red. (seção 8.1) | Usinagem local sob projeto | 1 un. |
+| Eixo Estriado Adaptador (Spline)* | Específico por geração de câmbio (seção 8.1) | Usinagem local sob projeto | 1 un. |
+| Kit de Swap de Câmbio (alternativa)* | Caixa 4M c/reduzida ou 5M, quando optado swap em vez de adaptação in situ | Mercado de reposição nacional | 1 un. (opcional) |
+| Módulo(s) de Bateria --- Jipe Curto* | LFP, 60–75 kWh total, 2 módulos (dianteiro/porta-malas), IP67/IP68 | Fornecedor nacional qualificado | 2 un. |
+| Módulo(s) de Bateria --- Perua/Picape* | LFP, 90–100 kWh total, 3 módulos (frontal/central/traseiro), IP67/IP68 | Fornecedor nacional qualificado | 3 un. |
+| BMS Mestre | Gerenciamento e comunicação com VCU | Integrado ao pack | 1 un. |
+| BMS Satélite | Monitoramento por módulo (2 ou 3, conforme carroçaria) | Integrado ao pack | 2–3 un. |
+| VCU | Unidade de controle de veículo dedicada | FuelTech ou equivalente nacional | 1 un. |
+| OBC | 11 kW, Dual AC Tipo 2 + CCS2 DC | Fornecedor nacional qualificado | 1 un. |
+| Contator Principal HV | Alta corrente, com feedback de estado | Fornecedor nacional qualificado | 2 un. (redundantes) |
+| Contator de Pré-Carga + Resistor | Dimensionado ao barramento DC | Fornecedor nacional qualificado | 1 conjunto |
+| IMD (Monitor de Isolamento) | Limiar típico 100 Ω/V | Fornecedor nacional qualificado | 1 un. |
+| Fusíveis HV | Dimensionados por trecho do circuito | Fornecedor nacional qualificado | Conforme projeto |
+| Desconector de Serviço | Isolamento físico manual do pack | Fornecedor nacional qualificado | 1 un. |
+| Conversor DC-DC | 100A–150A, 400V/12V (recalculado no Ramo B da direção --- seção 7) | Fornecedor nacional qualificado | 1 un. |
+| Bateria Auxiliar 12V | AGM/Optima | Representação nacional | 1 un. |
+| Compressor Elétrico A/C | Hermético, 400V | Fornecedor nacional qualificado | 1 un. |
+| Bomba EHPS (Direção)* | Eletro-hidráulica, 12V, vazão variável --- Ramo A ou B1 (seção 7) | Fornecedor nacional qualificado | 1 un. |
+| Kit EPS de Coluna (alternativa)* | Assistência elétrica de baixa tensão --- Ramo B2 (seção 7) | Fornecedor nacional qualificado | 1 un. (alternativo) |
+| Kit de Conversão Freio a Disco Dianteiro* | Discos, pinças e sistema hidráulico dianteiro --- veículos pré-1995/1996 | Fornecedor nacional qualificado | 1 kit (conforme diagnóstico) |
+| Kit de Conversão Freio a Disco Traseiro | Discos, pinças, cubos e mangas de eixo adaptados, com suporte a cabo de freio de mão | Fornecedor nacional qualificado | 1 kit |
+| Kit de Adaptação de Hidrovácuo/Servofreio* | Para veículos sem hidrovácuo original (décadas de 60–70) | Fornecedor nacional qualificado | 1 kit (conforme diagnóstico) |
+| Pinças de Freio de Estacionamento Mecânico | Acionamento por cabo, traseiras | Fornecedor nacional qualificado | 2 un. |
+| Kit EPB (opcional) | Pinças com atuador elétrico + módulo | TRW / ZF ou equivalente | 2 un. (opcional) |
+| Kit de Upgrade de Eixo Traseiro Flutuante* | Canela grossa, pontas de eixo reforçadas --- obrigatório se eixo original semi-flutuante (seção 6) | Fornecedor nacional qualificado | 1 kit (conforme diagnóstico) |
+| Skid Plates | Aço/alumínio, sob baterias/inversor/motor | Usinagem/fabricação local | 3–4 un. |
+| Cold Plates (Baterias) | Placas frias líquido-refrigeradas | Fornecedor nacional qualificado | 2–3 un. (1/módulo) |
+| Radiador Motor/Inversor | Fluxo cruzado, circuito dedicado | Fornecedor nacional qualificado | 1 un. |
+| Bomba Elétrica de Arrefecimento | Controle PWM | Fornecedor nacional qualificado | 2 un. |
+| Cabeamento HV | Cobertura laranja, conectores IP67 | Fornecedor nacional qualificado | Conforme projeto |
+| Kit de Reforço de Suspensão* | Feixe de molas reforçado (booster leaf ou parabólico) e amortecedores heavy-duty, dimensionados à carga estática do pack (seção 9.1) | Fornecedor nacional qualificado | 1 kit por eixo |
+| Buchas de Suspensão de Maior Carga | Poliuretano ou borracha reforçada --- feixe de molas, barra estabilizadora e amortecedores (seção 9.1) | Fornecedor nacional qualificado | Conforme projeto |
+| Caixa de Direção Hidráulica* | Adaptação de caixa hidráulica de outro veículo compatível --- Ramo B1 (seção 7) | Mercado de reposição nacional | 1 un. (conforme ramificação) |
+| Disco e Platô de Embreagem | Conjunto original ou de reposição equivalente, mantido como amortecedor torcional (seção 8.2) | Mercado de reposição nacional | 1 conjunto |
+| Volante de Inércia Adaptado (Flywheel) | Balanceado dinamicamente com o rotor do motor, 0--6.000 RPM (seção 8.2) | Usinagem local sob projeto | 1 un. |
+| Kit de Conversão do Painel/Cluster | Motores de passo (stepper) para manômetros originais (Opção A) ou display digital complementar (Opção B), comandados via CAN (seção 15.1) | Fornecedor nacional qualificado | 1 kit |
+| Bocal de Recarga CCS2/Tipo 2 | Conector físico Tipo 2 (AC) / CCS2 (DC), tampa articulada IP54, com suporte de fixação estrutural (seção 15.2) | Fornecedor nacional qualificado | 1 un. |
+| Trava Elétrica do Plugue (Connector Lock) | Solenoide de travamento mecânico do conector, integrado ao OBC/VCU (seção 15.2) | Fornecedor nacional qualificado | 1 un. |
+
+17.2 Diagramas Elétricos Simplificados
+
+A arquitetura elétrica de alta tensão (400V) e sua integração com a VCU devem ser representadas em diagrama simplificado, destacando as camadas de segurança (HVIL, contatores, pré-carga, IMD, fusíveis) e a cadeia de tração (inversor, motor, interface com o câmbio conforme a matriz de compatibilidade da seção 8.1). O diagrama simplificado tem caráter ilustrativo e não substitui o esquemático elétrico definitivo, que deverá ser elaborado em detalhe pelo engenheiro responsável durante a fase de projeto executivo, incorporando as camadas de proteção pós-colisão e de barreira térmica descritas na seção 13.2 (ver plano de documentação técnica, seção 20).
+
+BLOCO IV: Conformidade, Homologação e Governança de Riscos
+
+18. Matriz de Conformidade com Normas Aplicáveis (ABNT, Contran, Inmetro, ISO)
+
+A tabela relaciona os principais requisitos normativos e regulatórios aplicáveis ao projeto e a forma como cada um é endereçado pela arquitetura descrita neste documento:
+
+| Norma / Requisito | Escopo | Como é Endereçado no Projeto |
+| --- | --- | --- |
+| ABNT NBR IEC 61851 (série) | Requisitos de sistemas de recarga condutiva para veículos elétricos. | OBC especificado com compatibilidade AC Tipo 2 / CCS2 conforme padrões nacionais de recarga (seção 16.2). |
+| ABNT NBR ISO 6469 (série) / práticas de isolamento veicular | Requisitos de segurança de veículos elétricos rodoviários (proteção contra choque elétrico, segurança funcional, proteção pós-colisão). | Arquitetura de segurança HV consolidada (seção 13.1): HVIL, contatores redundantes, IMD, fusíveis, desconector de serviço. |
+| Resolução Contran / diretrizes Senatran --- alteração de combustível/propulsão | Regras para modificação da característica de propulsão do veículo e atualização cadastral. | Processo de regularização estruturado em 5 passos (seção 19.3), com ART, CSV e CAT. |
+| Inspeção ITL / Emissão do CSV (Inmetro) | Vistoria técnica de segurança veicular: freios, distribuição de peso por eixo, rigidez estrutural, isolamento elétrico. | Conversão de freios a disco (seção 5), distribuição de baterias em 2 ou 3 módulos por versão (seção 12), skid plates, IMD e HVIL (seção 13.1). |
+| Grau de Proteção IP (IEC 60529) | Proteção contra poeira e água para invólucros elétricos. | Especificação IP67 (mínima) e IP68 para caixas de bateria e conectores HV (seção 13.1). |
+| ART / CREA | Responsabilidade técnica formal sobre o projeto de engenharia mecânica e elétrica. | Emissão de ART por engenheiro credenciado, conforme Passo 2 do processo de regularização (seção 19.3). |
+| Sinalização de Cabeamento de Alta Tensão (prática automotiva) | Identificação inequívoca de circuitos de alta tensão para segurança de terceiros. | Cabeamento HV em cobertura laranja padrão, conectores travados, conforme seção 13.1. |
+| Resolução Contran nº 749/2018 | Requisitos específicos de segurança para veículos movidos a propulsão híbrida, híbrida plug-in e elétrica (proteção contra choque elétrico, isolamento, comportamento pós-colisão do REESS). | Arquitetura HV consolidada (seção 13.1) e proteção pós-colisão dedicada (seção 13.2); item citado explicitamente no laudo técnico de engenharia (seção 19.3). |
+| Resolução Contran nº 916/2022 (Anexo IV), alterada pela Resolução nº 1.021/2026 | Regras específicas para alteração da forma de propulsão (combustão → elétrica) em automóvel, caminhonete, camioneta e utilitário, incluindo exigência de potência declarada em kW. | Enquadramento jurídico específico para a faixa de fabricação 1958–2001 da frota Bandeirante, com laudo estrutural ITL e consulta formal prévia (seção 19). |
+| Resolução Contran nº 915/2022 | Requisitos de desempenho do sistema de freio de serviço e de estacionamento. | Conversão de freios a disco mandatória (seção 5), integração da frenagem regenerativa (seção 11.2) e freio de estacionamento mecânico como solução principal (seção 5.3). |
+| Resolução Contran nº 954/2022 | Requisitos para Controle Eletrônico de Estabilidade (ESC). | Exigibilidade para este retrofit específico a confirmar formalmente com engenheiro responsável e ITL, dado o ano/categoria do veículo (ver risco correspondente na seção 21). |
+| Resolução Contran nº 968/2022 | Requisitos de identificação veicular (chassi, plaqueta de identificação, numeração). | Reidentificação do veículo após a alteração de propulsão tratada como etapa formal do processo de regularização (seção 19.3), sob responsabilidade da entidade executora da modificação. |
+
+19. Regularização e Homologação no Detran/ITL (Processo em 5 Passos e Requisitos Pré-2014)
+
+19.1 Diagnóstico Regulatório Específico da Frota
+
+A Toyota Bandeirante deixou de ser produzida no Brasil em novembro de 2001, e todos os exemplares em circulação têm ano de fabricação entre 1958 e 2001 --- ou seja, toda a frota-alvo deste plano está, por definição, fora do universo de veículos fabricados a partir de 2014, faixa à qual a Resolução Contran nº 1.021/2026 faz referência expressa no contexto da instalação de motor elétrico auxiliar em caminhões e caminhões-trator. Este plano, portanto, não trata o ano de fabricação como uma dúvida pontual referente a um veículo isolado, mas estabelece uma diretriz regulatória própria e abrangente, aplicável a toda a faixa de fabricação do modelo (1958–2001).
+
+19.2 Diretriz Técnica Atualizada --- Elementos Obrigatórios
+
+Enquadramento jurídico específico: para veículos com idade entre aproximadamente 20 e 60+ anos, frente às Resoluções Contran nº 916/2022 e nº 1.021/2026, com consulta formal e por escrito ao Detran sobre a elegibilidade do veículo específico, antes de qualquer investimento em componentes ou início da conversão física.
+
+Laudo de integridade estrutural do chassi: emitido junto a uma Instituição Técnica Licenciada (ITL), obrigatório antes do início de qualquer processo de conversão, dada a idade do veículo doador.
+
+Análise jurídica/técnica dedicada: específica sobre a elegibilidade de veículos anteriores a 2014 para o processo de eletrificação e posterior homologação, e não uma análise genérica compartilhada com outras categorias de veículo.
+
+**[MANDATÓRIO] **Reavaliação e Regularização do Peso Bruto Total (PBT): o acréscimo de massa do pack de baterias (seção 9.1) pode alterar o Peso Bruto Total original do veículo cadastrado no Detran; o novo PBT deve ser verificado por pesagem (seção 9.1) e, quando aplicável, regularizado formalmente junto ao Detran/ITL como parte do mesmo processo de regularização, assegurando que a capacidade de frenagem homologada (seção 5) e a categoria de habilitação exigida do condutor permaneçam compatíveis com o veículo convertido.
+
+19.3 Processo de Regularização no Detran em 5 Passos
+
+A homologação para alteração de combustível no cadastro do veículo perante o Detran --- com base na Resolução Contran nº 916/2022 (Anexo IV, alterado pela Resolução nº 1.021/2026) e nos requisitos de segurança da Resolução Contran nº 749/2018 --- é realizada em 5 passos estruturados:
+
+Passo 1 --- Autorização Prévia do Detran e Confirmação de Elegibilidade: abertura de requerimento formal no Detran para 'Modificação de Veículo / Alteração de Combustível', incluindo consulta formal por escrito sobre a elegibilidade específica do veículo Bandeirante conforme sua faixa de fabricação (1958–2001), antes de efetuar a conversão física.
+
+Passo 2 --- Elaboração do Projeto Técnico, Laudo Estrutural e Emissão da ART: elaboração do projeto de engenharia mecânica e elétrica assinado por Engenheiro credenciado ao CREA, acompanhado da Anotação de Responsabilidade Técnica (ART) e do laudo de integridade estrutural do chassi emitido pela ITL.
+
+Passo 3 --- Vistoria de Segurança Veicular em ITL (Inmetro): após a montagem, o veículo passa por testes rigorosos de eficiência de freios, distribuição de peso por eixo, rigidez estrutural dos suportes e isolamento elétrico em Instituição Técnica Licenciada.
+
+Passo 4 --- Emissão do CSV e do CAT: emissão do Certificado de Segurança Veicular (CSV) pela ITL e cadastramento do Certificado de Adequação à Legislação de Trânsito (CAT).
+
+Passo 5 --- Atualização Cadastral e Emissão do CRLV-e: apresentação de NFs de peças e serviços, CSV e ART no Detran para emissão de novo documento constando a propulsão 'ELÉTRICO'.
+
+20. Plano de Documentação Técnica e Cartão de Resgate de Emergência (Rescue Sheet)
+
+Para suportar a manutenção de longo prazo, a homologação e a eventual transferência de propriedade do veículo, o projeto prevê a geração e manutenção formal do seguinte conjunto documental:
+
+Diagramas Elétricos: esquemático completo do sistema HV (pack, contatores, pré-carga, IMD, fusíveis, inversor, OBC) e do sistema de baixa tensão (VCU, sensores, atuadores, freio de estacionamento, periféricos 12V), em formato editável e impresso, revisado a cada alteração de hardware (versão detalhada a partir do diagrama simplificado da seção 17.2).
+
+Lista de Materiais (BOM): relação completa de componentes com fabricante, número de peça, especificação técnica e fornecedor nacional, conforme tabela da seção 17.1, mantida como referência única para reposição futura, incluindo as variantes ramificadas por câmbio, carroçaria, freios, direção e eixo traseiro.
+
+Laudo de Integridade Estrutural do Chassi: emitido pela ITL conforme seção 19.2, mantido junto à documentação permanente do veículo.
+
+Lista de Peças de Reposição Críticas: relação mínima de itens a manter em estoque ou de fácil aquisição --- fusíveis HV sobressalentes, conectores HV de reposição, contator de pré-carga, sensor de posição do pedal, cabo do freio de estacionamento mecânico --- priorizada para uso em expedições remotas sem suporte técnico próximo.
+
+Procedimentos de Manutenção: rotinas de inspeção periódica (torque de fixação das caixas de bateria, integridade dos respiros, teste do HVIL, verificação do IMD, inspeção do freio de estacionamento mecânico e do freio a disco convertido), com periodicidade recomendada por item.
+
+Procedimento de Calibração da VCU: roteiro estruturado cobrindo (i) carregamento e validação de firmware, (ii) parametrização dos mapas de torque e ramp-rate por marcha e por geração de câmbio (seção 8.1), (iii) calibração da frenagem regenerativa em função do SOC e da aderência estimada, (iv) ajuste dos limites de derating térmico, e (v) validação final em bancada antes de qualquer liberação para testes de pista.
+
+Procedimento de Desenergização para Manutenção: sequência obrigatória antes de qualquer intervenção no sistema HV --- (1) desligar a tração e aguardar parada total, (2) desligar a chave geral de baixa tensão, (3) acionar o desconector de serviço, (4) aguardar o tempo de descarga dos capacitores do inversor especificado pelo fabricante, (5) confirmar tensão residual nula com multímetro categoria adequada antes de tocar em qualquer terminal HV, e (6) sinalizar o veículo como 'em manutenção HV' para evitar acionamento acidental por terceiros.
+
+Manual do Proprietário (versão retrofit): documento resumido para uso do condutor, cobrindo o procedimento de desenergização, acionamento do freio mecânico de backup e cuidados específicos para expedições remotas.
+
+Cartão de Resgate de Emergência (Rescue Sheet): documento gráfico padronizado, no modelo utilizado internacionalmente por corpos de bombeiros e equipes de resgate veicular, confeccionado em material laminado resistente a intempéries e fixado em local visível e duplicado — para-sol do motorista, para acesso imediato pela própria equipe do veículo, e parabrisa interno ou coluna B, para visibilidade externa em caso de acidente — indicando de forma gráfica e inequívoca: o trajeto de todo o cabeamento de alta tensão, identificado na cor laranja padrão; a localização exata do desconector de serviço manual (Service Disconnect) e o procedimento de acionamento; a posição de cada módulo de bateria; os pontos de corte estrutural seguros e os pontos proibidos para ferramentas de resgate (desencarcerador); a tensão nominal do sistema HV; e o resumo dos procedimentos de desenergização de emergência descritos no item anterior.
+
+21. Matriz de Riscos Técnicos do Projeto e Ações de Mitigação
+
+A matriz abaixo consolida os principais riscos técnicos identificados, sua probabilidade, impacto e a estratégia de mitigação associada, incluindo os riscos específicos decorrentes da heterogeneidade da frota Bandeirante por ano de fabricação:
+
+| Risco Técnico | Probabilidade | Impacto | Mitigação |
+| --- | --- | --- | --- |
+| Ruptura de câmbios antigos (3M ou 4M sem reduzida) sob torque elétrico instantâneo | Média | Alto | Matriz de compatibilidade por geração (seção 8.1), limitação eletrônica de torque (ramp-rate) na VCU, opção de swap para caixa mais moderna. |
+| Cisalhamento de eixo semi-flutuante (canela fina) sob torque elétrico | Média | Alto | Upgrade mandatório para eixo flutuante reforçado antes da instalação do motor elétrico, sem exceção (seção 6). |
+| Reprovação em vistoria por manutenção de freio a tambor original | Alta (se não convertido) | Alto | Conversão de freio a disco tratada como pré-requisito mecânico obrigatório, orçado como item de linha próprio (seção 5). |
+| Falha de isolamento elétrico por umidade/lama em trilha | Média | Alto | IMD contínuo, vedação IP67/IP68, respiros hidrofóbicos, inspeção pré-expedição. |
+| Choque de torque instantâneo na 1ª marcha/reduzida danificando câmbio original | Média | Alto | Limitação eletrônica de torque (ramp-rate) na VCU, embreagem original como amortecedor torcional. |
+| Superaquecimento do pack em subida prolongada na reduzida | Média | Alto | Gerenciamento térmico dedicado por módulo, derating progressivo de potência, validação em teste de campo. |
+| Falha do sistema de freio de estacionamento | Baixa | Alto | Solução principal puramente mecânica, condicionada à conversão de disco traseiro (seções 5.3 e 5); EPB como opcional não crítico. |
+| Layout de bateria incompatível com Chassi Curto comprometendo vão livre do solo | Média (se não observado) | Alto | Configuração de dois módulos (60–75 kWh) mandatória para Jipe Curto, vedada a aplicação do layout de três módulos sem estudo específico (seção 12.1). |
+| Sobrecarga do sistema 12V pela adoção de EPS de coluna (Ramo B2 de direção) | Média | Médio | Recálculo obrigatório do dimensionamento do sistema 12V antes da definição final da arquitetura elétrica auxiliar (seção 7). |
+| Sobrepeso e desbalanceamento de eixos comprometendo aprovação na vistoria | Média | Médio | Distribuição de baterias em 2 ou 3 módulos conforme carroçaria, pesagem por eixo antes da vistoria. |
+| Atraso na importação/entrega de componentes | Média | Médio | Critérios de qualificação de fornecedores (representação nacional, estoque local), reserva antecipada de componentes críticos. |
+| Reprovação na vistoria ITL por documentação técnica incompleta | Baixa | Alto | Plano de documentação técnica formal (BOM, diagramas, procedimentos) mantido atualizado desde o início do projeto. |
+| Falha de contator principal (contato colado) na energização | Baixa | Alto | Contatores redundantes com monitoramento de feedback de estado, checagem em todo power-up. |
+| Corrosão/entrada de água nas caixas de bateria em vau | Baixa | Alto | Caixas seladas IP67/IP68, skid plates de proteção mecânica, inspeção de vedação periódica. |
+| Acidente durante manutenção por energização residual | Baixa | Alto | Procedimento formal de desenergização (seção 20) com desconector de serviço e verificação de tensão residual. |
+| Propagação de falha térmica (thermal runaway) do módulo central para o habitáculo | Baixa | Alto | Barreira de propagação térmica dedicada, sensores de temperatura por célula com derating progressivo, extintor apropriado a bordo. |
+| Ausência de desconexão automática do sistema HV em caso de colisão | Baixa | Alto | Interface de crash-signal integrada à VCU para abertura dos contatores independentemente do HVIL (seção 13.2), validada em bancada. |
+| Elegibilidade regulatória da frota (fabricação 1958–2001) frente às normas Contran vigentes | Média | Alto | Enquadramento jurídico específico, laudo estrutural ITL e consulta formal prévia ao Detran e ao engenheiro CREA, antes do início físico da conversão (seção 19). |
+| Exigibilidade de Controle Eletrônico de Estabilidade (ESC) conforme Resolução Contran nº 954/2022 | Média | Médio | Avaliação técnica formal junto ao engenheiro responsável e à ITL sobre a exigibilidade de ESC para este retrofit e ano de fabricação, com registro da análise no laudo técnico. |
+| Risco de incêndio por resíduo de combustível diesel remanescente (tanque/linhas não descomissionados) | Baixa | Alto | Descomissionamento completo e inertização do sistema de combustível diesel original antes da instalação de componentes HV, tratado como pré-requisito de segurança (seções 3 e 4.4). |
+| Falha de pneu ou rolamento de roda por sobrecarga não avaliada após acréscimo de massa do pack | Média | Alto | Verificação obrigatória do índice de carga de pneus e da capacidade dos rolamentos de roda, com upgrade quando necessário, registrada no laudo técnico (seções 9.1 e 4.4). |
+| Falha por fadiga da caixa de direção ou dos terminais/mangas de eixo dianteiros pelo peso do módulo frontal de bateria | Baixa | Alto | Verificação da capacidade estrutural da caixa de direção, terminais e mangas de eixo dianteiras, com substituição por componentes de maior capacidade quando indicado (seções 9.2 e 4.4). |
+| Cisalhamento ou fadiga do eixo dianteiro, diferencial dianteiro, cardãs e juntas homocinéticas pelo torque elétrico instantâneo em uso 4x4 | Baixa | Alto | Verificação obrigatória de eixo dianteiro, diferencial dianteiro, cardãs e homocinéticas frente ao torque do motor elétrico, com reforço, upgrade ou limitação eletrônica de torque quando indicado (seção 4.4). |
+| Ruptura por fadiga do cabeamento HV em razão da flexão/torção do chassi tipo escada em uso off-road | Média | Alto | Dimensionamento de ancoragem e folga do chicote HV para acompanhar a articulação do chassi, validado em bancada ou teste de campo instrumentado (seções 13.1 e 4.4). |
+| Entrada de água acima da capacidade de vedação IP67/IP68 em travessia de vau não limitada por projeto | Média | Alto | Definição formal da profundidade máxima de vau compatível com a vedação certificada, documentada no manual do proprietário e no cartão de resgate (seções 13.1 e 4.4). |
+| Peso Bruto Total (PBT) do veículo convertido excede o valor cadastrado, comprometendo frenagem e categoria de habilitação | Média | Médio | Verificação por pesagem e regularização formal do novo PBT junto ao Detran/ITL como parte do processo de homologação (seções 19.2 e 4.4). |
+| Perda do dispositivo antifurto de série (trava de direção) em conversões com coluna EPS (Ramo B2) | Baixa | Médio | Manutenção ou reinstalação de trava de direção mecânica funcional na coluna adaptada, verificada no projeto de engenharia (seções 7 e 4.4). |
+
+BLOCO V: Gestão Executiva, Custos e Sustentabilidade
+
+22. Cronograma Executivo com Marcos de Homologação (Gates)
+
+O prazo total estimado para a conclusão do projeto é de 6 a 10 meses, podendo variar conforme as ramificações técnicas aplicáveis ao veículo doador (necessidade de upgrade de eixo traseiro, extensão da conversão de freios, laudo estrutural ITL). A tabela abaixo detalha as fases técnicas e os marcos de homologação (gates) que condicionam o avanço para a etapa seguinte:
+
+| Período | Fase | Atividades | Marco de Homologação |
+| --- | --- | --- | --- |
+| Semanas 1–4 | Projeto e Autorização Prévia | Levantamento de configuração do veículo doador (câmbio, freios, direção, eixo traseiro, carroçaria --- seção 3), projeto de engenharia, detalhamento de layout no chassi (incl. posicionamento dos módulos de bateria) e solicitação da autorização prévia e do laudo estrutural no Detran/ITL. | Marco: protocolo aceito no Detran e laudo estrutural agendado |
+| Semanas 5–14 | Aquisição e Usinagem | Aquisição dos componentes elétricos (motor, inversor, VCU, baterias LFP, sistema de segurança HV) e usinagem da placa adaptadora motor–câmbio específica da geração identificada (seção 8.2). | Marco: componentes críticos recebidos |
+| Semanas 15–22 | Montagem e Integração | Montagem mecânica, upgrade de eixo traseiro (se aplicável), conversão de freios a disco, instalação dos módulos de bateria, cabeamento de alta tensão, sistema de segurança HV, gerenciamento térmico e retrofit do freio de estacionamento. | Marco: comissionamento HV de bancada aprovado |
+| Semanas 23–26 | Calibração e Testes | Calibração de software da VCU (torque por geração de câmbio, regeneração, térmico), testes de pista em rodovia e off-road, ajuste fino. | Marco: testes de pista concluídos sem falhas |
+| Semanas 27–30 | Homologação | Elaboração final da documentação técnica, inspeção veicular em ITL, emissão do CSV/CAT e regularização no Detran. | Marco: CRLV-e emitido com propulsão elétrica |
+
+23. Estimativa Consolidada de Custos e Orçamento Detalhado
+
+Esta seção apresenta uma tabela-resumo com os itens de maior impacto orçamentário, seguida do orçamento detalhado por categoria. Os valores são deixados em aberto ('A definir (cotação)') nesta versão do documento; os valores definitivos serão obtidos após cotação formal junto aos fornecedores locais qualificados, conforme os critérios da seção 16.1, antes da contratação. Itens marcados com asterisco (*) têm escopo e valor dependentes da ramificação técnica aplicável ao veículo doador (câmbio, carroçaria, freios originais, direção e tipo de eixo traseiro).
+
+23.1 Tabela de Valores de Referência
+
+| Item | Especificação de Referência | Valor de Referência (R$) |
+| --- | --- | --- |
+| Motor Elétrico | 120–150 kW, compatível 400V | A definir (cotação) |
+| Inversor | Dedicado, 400V | A definir (cotação) |
+| Baterias (pack completo)* | LFP, 60–75 kWh (2 módulos, Jipe Curto) ou 90–100 kWh (3 módulos, Perua/Picape) | A definir (cotação) |
+| BMS | Mestre + 2 ou 3 satélites* | A definir (cotação) |
+| OBC | 11 kW AC + CCS2 DC | A definir (cotação) |
+| VCU | Unidade dedicada + chicote | A definir (cotação) |
+| Adaptação Motor–Câmbio* | Placa bellhousing e eixo estriado específicos por geração de câmbio, ou swap de caixa | A definir (cotação) |
+| Conversão de Freios a Disco* | Dianteiro e/ou traseiro, conforme configuração original | A definir (cotação) |
+| Upgrade de Eixo Traseiro* | Canela grossa reforçada, se aplicável | A definir (cotação) |
+| Reforço de Suspensão* | Feixe de molas, amortecedores e buchas de maior carga (seção 9) | A definir (cotação) |
+| Sistema de Direção* | EHPS + caixa hidráulica (Ramo A/B1) ou EPS de coluna (Ramo B2) | A definir (cotação) |
+| Integração | Montagem, elétrica HV, calibração, periféricos | A definir (cotação) |
+| Homologação | ART, ITL/CSV, Detran, documentação técnica | A definir (cotação) |
+| Custo Total Estimado da Conversão EV |  | A definir (cotação) |
+
+23.2 Orçamento Detalhado por Item
+
+23.2.1 Componentes
+
+| Item / Componente | Especificação / Fornecedor Nacional | Faixa de Custo (R$) |
+| --- | --- | --- |
+| Motor Elétrico | Síncrono/indução 120–150 kW, compatível 400V (WEG / Danfoss / FuelTech) | A definir (cotação) |
+| Inversor de Tração | Inversor 400V dedicado, compatível com o motor especificado | A definir (cotação) |
+| Pack de Baterias LFP* | 2 módulos (60–75 kWh, Jipe Curto) ou 3 módulos (90–100 kWh, Perua/Picape), estrutura e fiação HV interna | A definir (cotação) |
+| BMS (Mestre + Satélites)* | Gerenciamento de célula, balanceamento e comunicação com VCU | A definir (cotação) |
+| Sistema de Segurança HV | HVIL, contatores redundantes, pré-carga, IMD, fusíveis HV, desconector de serviço | A definir (cotação) |
+| OBC (11 kW) + CCS2 Fast | Sistema Dual AC Tipo 2 + Recarga Rápida DC, 400V | A definir (cotação) |
+| VCU Dedicada | Unidade de controle de veículo + chicote de sinal | A definir (cotação) |
+| Sistema de Gerenciamento Térmico | Cold plates, radiador, bombas elétricas, PTC, ventiladores | A definir (cotação) |
+| Sistema de Direção* | Bomba EHPS 12V (Ramo A/B1) e, quando aplicável, caixa de direção hidráulica adaptada (Ramo B1), ou kit EPS de coluna (Ramo B2) | A definir (cotação) |
+| Ar-Condicionado HV | Compressor elétrico hermético 400V | A definir (cotação) |
+| Freio de Estacionamento Mecânico (principal) | Pinças traseiras com acionamento por cabo | A definir (cotação) |
+| Freio de Estacionamento EPB (opcional) | Pinças com atuador elétrico + módulo eletrônico | A definir (cotação) |
+| Conversão de Freios a Disco* | Kits dianteiro e/ou traseiro, hidrovácuo/servofreio conforme diagnóstico (seção 5) | A definir (cotação) |
+| Upgrade de Eixo Traseiro* | Kit de eixo flutuante reforçado, se aplicável (seção 6) | A definir (cotação) |
+| Adaptação Mecânica e Suportes* | Placa adaptadora motor–câmbio específica por geração, eixo estriado, disco/platô de embreagem, volante de inércia adaptado, suportes de bateria, skid plates | A definir (cotação) |
+| Proteção Ambiental | Caixas IP67/IP68, respiros hidrofóbicos, conectores selados | A definir (cotação) |
+| Conversor DC-DC 12V | 100A–150A dedicado ao sistema auxiliar/guincho (recalculado se Ramo B2 de direção) | A definir (cotação) |
+| Bateria Auxiliar 12V | AGM/Optima, alimenta guincho elétrico e sistema 12V (seção 3) | A definir (cotação) |
+| Cabeamento HV (Materiais) | Cobertura laranja, conectores IP67, blindagem EMI --- material, separado da mão de obra de instalação (seção 23.2.2) | A definir (cotação) |
+| Kit de Swap de Câmbio (alternativa)* | Caixa 4M c/reduzida ou 5M, quando optado swap em vez de adaptação in situ (seção 8.1) --- alternativa à Adaptação Mecânica e Suportes acima | A definir (cotação, opcional) |
+| Reforço de Suspensão* | Feixe de molas reforçado, amortecedores heavy-duty e buchas de maior carga, dimensionados ao peso do pack (seção 9.1) | A definir (cotação) |
+| Kit de Conversão do Painel/Cluster | Conversão do painel de instrumentos para leitura via CAN (stepper ou display digital, seção 15.1) | A definir (cotação) |
+| Bocal de Recarga e Trava Elétrica do Plugue | Conector CCS2/Tipo 2, suporte estrutural e solenoide de travamento (seção 15.2) | A definir (cotação) |
+
+23.2.2 Integração e Mão de Obra
+
+| Item / Componente | Especificação / Fornecedor Nacional | Faixa de Custo (R$) |
+| --- | --- | --- |
+| Montagem Mecânica | Instalação de motor, módulos de bateria, suportes e skid plates | A definir (cotação) |
+| Instalação Elétrica de Alta Tensão | Cabeamento HV, conectorização, aterramento e blindagem EMI | A definir (cotação) |
+| Conversão de Freios e Eixo Traseiro* | Mão de obra de instalação dos kits de disco, hidrovácuo e/ou eixo flutuante | A definir (cotação) |
+| Integração de Periféricos | Ar-condicionado, direção (EHPS/EPS), freios, guincho | A definir (cotação) |
+
+23.2.3 Calibração e Engenharia de Controle
+
+| Item / Componente | Especificação / Fornecedor Nacional | Faixa de Custo (R$) |
+| --- | --- | --- |
+| Calibração de Software da VCU | Mapas de torque, regeneração, gerenciamento térmico e segurança HV | A definir (cotação) |
+| Testes de Bancada e Comissionamento HV | Validação de HVIL, pré-carga, IMD e fusíveis antes do primeiro acionamento | A definir (cotação) |
+| Testes de Pista e Ajuste Fino | Rodovia e off-road, incluindo validação térmica em subida na reduzida | A definir (cotação) |
+
+23.2.4 Engenharia e Homologação
+
+| Item / Componente | Especificação / Fornecedor Nacional | Faixa de Custo (R$) |
+| --- | --- | --- |
+| Projeto de Engenharia, ART e ITL | Laudo CREA, inspeção de segurança Inmetro/CSV, laudo estrutural de chassi (seção 19) | A definir (cotação) |
+| Taxas e Vistoria Detran | Emissão de CAT, taxas estaduais, novo CRLV-e | A definir (cotação) |
+| Documentação Técnica do Projeto | Diagramas elétricos, BOM, procedimentos de manutenção/calibração | A definir (cotação) |
+
+23.3 Consolidado Geral
+
+| Categoria | Faixa de Custo (R$) |
+| --- | --- |
+| Subtotal Componentes | A definir (cotação) |
+| Subtotal Integração e Mão de Obra | A definir (cotação) |
+| Subtotal Calibração e Engenharia de Controle | A definir (cotação) |
+| Subtotal Engenharia e Homologação | A definir (cotação) |
+| SUBTOTAL CONVERSÃO EV | A definir (cotação) |
+| Restauração do Veículo (Mecânica/Estética) | A definir (cotação) |
+| VALOR TOTAL ESTIMADO INVESTIDO NO VEÍCULO | A definir (cotação) |
+
+*Nota: os valores acima foram intencionalmente deixados em aberto ('A definir (cotação)') nesta versão do documento. Os valores definitivos serão obtidos após cotação formal junto aos fornecedores locais qualificados, conforme os critérios da seção 16.1, antes da contratação, e variam conforme as ramificações técnicas aplicáveis ao veículo doador específico.*
+
+24. Diretrizes Ambientais, Descarte e Segunda Vida das Baterias LFP
+
+Este capítulo estabelece as diretrizes de logística reversa e de fim de vida útil aplicáveis aos módulos de bateria LFP (seção 12), cobrindo o enquadramento regulatório brasileiro, a rastreabilidade documental e a possibilidade de reaproveitamento em segunda vida antes da reciclagem definitiva.
+
+24.1 Enquadramento Regulatório e Logística Reversa
+
+Classificação do Resíduo: célula ou módulo de bateria de lítio-ferro-fosfato (LFP) inservível é classificado como resíduo perigoso Classe I, conforme ABNT NBR 10004, em razão de sua reatividade e inflamabilidade.
+
+Base Legal: obrigatoriedade de sistema de logística reversa prevista no art. 33 da Lei nº 12.305/2010 (Política Nacional de Resíduos Sólidos — PNRS), regulamentada pelo Decreto nº 10.936/2022 e tecnicamente complementada pela Resolução Conama nº 401/2008, que fixa limites de metais pesados e a obrigação de destinação ambientalmente adequada.
+
+Metas Setoriais Progressivas: o Decreto nº 11.413/2023 estabelece metas progressivas de logística reversa para baterias, com responsabilização do gerador até a destinação final adequada; o projeto deve manter vínculo com sistema setorial ou entidade gestora reconhecida para cumprimento dessas metas.
+
+Responsabilidade Compartilhada e Rastreabilidade: manutenção de contrato ou termo de compromisso com entidade licenciada de logística reversa de baterias, com rastreabilidade documental completa desde a retirada do módulo até a destinação final — Manifesto de Transporte de Resíduos (MTR) e Certificado de Destinação Final (CDF) arquivados junto à documentação técnica permanente do veículo (seção 20).
+
+Transporte do Resíduo: módulos retirados de serviço transportados como produto perigoso, conforme a classificação ONU aplicável a baterias de íon-lítio, com embalagem, sinalização e documentação de transporte (MOPP/CIV/CIPP conforme exigência da ANTT) apropriadas.
+
+24.2 Plano de Segunda Vida (Second-Life Battery)
+
+Critério de Elegibilidade: antes do descarte definitivo, módulos com estado de saúde (SOH) igual ou superior a 70–80% da capacidade nominal, sem eventos de dano térmico ou de colisão registrados no datalogger da VCU (seção 11.2) e com integridade do invólucro IP67/IP68 preservada (seção 13.1), são avaliados para reaproveitamento em segunda vida.
+
+Aplicação Preferencial: armazenamento estático de energia em sistemas fotovoltaicos residenciais ou off-grid (BESS), aplicação de menor exigência de ciclagem e potência que estende a vida útil do material antes da reciclagem, em linha com as metas progressivas de reaproveitamento do Decreto nº 11.413/2023.
+
+Armazenamento Temporário Seguro: módulos retirados de serviço e aguardando destinação (segunda vida ou reciclagem) devem ser mantidos em local ventilado, isolados de materiais inflamáveis e com SOC reduzido a nível seguro de armazenamento — tipicamente entre 30% e 50% — para minimizar o risco de fuga térmica.
+
+Reciclagem ao Fim de Vida: módulos sem viabilidade de segunda vida são encaminhados a recicladora licenciada especializada em baterias de lítio, para recuperação de materiais (lítio, ferro, fósforo, cobre, alumínio), com emissão de certificado de destinação final.
+
+25. Considerações Finais e Próximos Passos
+
+A eletrificação da Toyota Bandeirante demonstra-se plenamente viável, alinhada com as exigências de desempenho e essencial para perpetuar o histórico deste ícone da indústria automobilística brasileira. Com a arquitetura 400V consolidada, a segurança elétrica unificada, o freio de estacionamento simplificado, o sistema de direção adaptado por geração, o BOM completo, os diagramas simplificados, o layout de baterias por versão de carroçaria, o cronograma de execução e a matriz de conformidade normativa, o projeto está no padrão de detalhamento esperado para programas de homologação e engenharia automotiva.
+
+O diferencial estrutural deste plano em relação a uma especificação genérica de retrofit é o reconhecimento explícito de que a frota Bandeirante, fabricada ao longo de mais de quatro décadas (1958–2001), não é mecanicamente homogênea. Cada uma das ramificações técnicas apresentadas --- matriz de compatibilidade de câmbio (seção 8.1), configuração de pack de baterias por carroçaria (seção 12.1), conversão de freios a disco por configuração original (seção 5), upgrade mandatório de eixo traseiro semi-flutuante (seção 6) e as duas ramificações do sistema de direção (seção 7) --- deve ser aplicada de forma consistente e registrada no laudo técnico de cada projeto individual.
+
+Próximos Passos Recomendados
+
+Realizar o levantamento completo de configuração do veículo doador (ano, motorização, câmbio, freios, direção, eixo traseiro e versão de carroçaria), conforme seção 3.
+
+Protocolar a Autorização Prévia e solicitar o laudo de integridade estrutural do chassi no Detran/ITL.
+
+Contratar o Engenheiro Mecânico/Elétrico credenciado ao CREA para validação da ART e elaboração dos diagramas elétricos definitivos a partir do BOM e do diagrama simplificado.
+
+Solicitar cotações formais de componentes, integração, calibração e homologação junto a fornecedores que atendam aos critérios de qualificação da seção 16.1, confirmando os valores de referência apresentados e as variantes ramificadas aplicáveis ao veículo específico.
+
+Iniciar o pedido dos componentes de tração junto aos representantes nacionais.
+
+Abrir a matriz de riscos, a matriz de conformidade e o plano de documentação técnica como documentos vivos, atualizados a cada marco do cronograma.
+
+Consultar o Anexo A (Catálogo de Acessórios Opcionais e Equipamentos de Expedição) para o escopo completo de acessórios de conforto, tecnologia, segurança complementar, off-road, energia, expedição, preservação histórica, monitoramento técnico e personalização, todos opcionais e não substitutivos dos requisitos mandatórios deste Plano Master.
+
+Anexo A: Catálogo de Acessórios Opcionais e Equipamentos de Expedição
+
+| **ANEXO A: CATÁLOGO DE ACESSÓRIOS OPCIONAIS E EQUIPAMENTOS DE EXPEDIÇÃO** Plano Master de Eletrificação  — Toyota Bandeirante 4x4 Documento Complementar ao Plano Master │ Aplicação: Todas as Versões de Carroçaria (Jipe Curto, Perua Longa, Picape CS/CD) |
+| --- |
+
+| **Observação Importante: ***Todos os itens descritos neste anexo são opcionais e independentes do escopo técnico mínimo estabelecido neste Plano Master. Sua adoção depende da configuração do veículo doador, da viabilidade técnica, do orçamento disponível e dos requisitos de homologação aplicáveis. Nenhum acessório listado substitui os requisitos mandatórios de segurança, estrutura, eletrificação e regularização previstos neste documento.* |
+| --- |
+
+**1. Conforto**
+
+| **Item / Acessório Opcional** | **Descrição Técnica ****&**** Funcionalidade** | **Impacto Elétrico ****&**** Integrabilidade** |
+| --- | --- | --- |
+| **Ar-condicionado elétrico de alta eficiência** | Compressor elétrico hermético alimentado diretamente pelo barramento HV 400V, eliminando o consumo do motor térmico e mantendo o gelamento com o veículo parado. | HV 400V (3.5 kW max) │ Inversor HVAC dedicado |
+| **Bancos com aquecimento e ventilação** | Resistências elétricas de aquecimento rápido e microventiladores de insuflamento integrados na espuma ergonômica dos bancos dianteiros e traseiros. | 12V LV (80W/banco pico) │ Chaveamento via relé |
+| **Bancos em couro ou material premium** | Revestimento em couro ecológico marítimo ou sintético impermeável de alta resistência a rasgo e raios UV, ideal para lavagem e uso em trilha. | Sem impacto elétrico │ +3 kg a +5 kg de massa |
+| **Vidros elétricos** | Máquinas de vidro elétrico de alta velocidade com módulos automatizados anti-esmagamento e acionamento por toque único em todas as portas. | 12V LV (15A pico por motor) │ Barramento de portas |
+| **Travas elétricas** | Sistema de travamento centralizado com solenoides blindados IP65, integração com alarme/chave presencial e travamento automático por velocidade. | 12V LV (pico momentâneo 10A) |
+| **Retrovisores elétricos e aquecidos** | Ajuste elétrico do ângulo dos espelhos e desembaçador térmico resistivo integrado no vidro para condução sob névoa ou chuva. | 12V LV (35W desembaçador) |
+| **Iluminação interna em LED** | Fitas e luminárias direcionais de LED de alto CRI com controle de intensidade (dimmer) e opção de iluminação de cortesia vermelha/âmbar para leitura noturna. | 12V LV (Consumo desprezível < 15W) |
+| **Tomadas USB-A, USB-C e 12 V** | Painel distribuidor no console e traseira com 2x USB-C Power Delivery (100W), 2x USB-A QC 3.0 e 2x tomadas padrão acendedor 12V (20A). | 12V LV │ Proteção por fusíveis dedicados |
+| **Carregador wireless para smartphones** | Base de carregamento por indução magnética Qi de 15W integrada ao console central com superfície antiderrapante. | 12V LV (18W entrada) │ Desligamento automático |
+
+**2. Tecnologia**
+
+| **Item / Acessório Opcional** | **Descrição Técnica ****&**** Funcionalidade** | **Impacto Elétrico ****&**** Integrabilidade** |
+| --- | --- | --- |
+| **Painel de instrumentos digital personalizável** | Cluster digital de alta definição (TFT/OLED) exibindo mostradores configuráveis (estilo clássico ou moderno EV), SOC, autonomia, kW instantâneo e fluxo de regeneração. | 12V LV (12W) │ Comunicação CAN bus com VCU |
+| **Central multimídia com Android Auto e Apple CarPlay** | Tela flutuante de 9" a 10.1" capacitiva, suporte sem fio a Android Auto/CarPlay, DSP de áudio integrado e entradas dedicadas de câmera. | 12V LV (30W) │ Antena GPS/Wi-Fi integrada |
+| **Sistema de navegação offline para expedições** | Navegador GPS dedicado com mapas vetoriais topográficos offline pré-carregados (GPX/Tracklogs) para condução fora de cobertura celular. | 12V LV │ Integrado à central multimídia |
+| **Câmeras 360°** | Conjunto de 4 câmeras grande-angulares IP69K integradas para visão panorâmica e simulação de maquete top-down facilitando manobras e trilhas. | 12V LV (18W) │ Módulo processador de vídeo |
+| **Câmera de ré** | Câmera de ré de alta definição com iluminação infravermelha noturna e linhas guia dinâmicas acionadas ao engatar a marcha ré. | 12V LV (5W) │ Acionamento por sinal de ré |
+| **Sensores de estacionamento dianteiro e traseiro** | Sensores ultrassônicos embutidos nos para-choques com alerta sonoro progressivo e indicação gráfica na multimídia. | 12V LV (8W) │ Módulo auxiliar |
+| **Dashcam integrada** | Câmera de gravação contínua em malha fechada (DVR) Full HD/4K frontal e traseira para registro de viagens e telemetria de incidentes. | 12V LV (8W) │ Gravação em cartão MicroSD industrial |
+| **Monitoramento remoto via aplicativo** | Módulo IoT com conectividade celular 4G que transmite SOC, status de recarga, travamento e alertas de invasão para smartphone. | 12V LV (3W standby) │ Bateria interna de backup |
+| **Rastreador GPS** | Rastreador geográfico autônomo com antena interna de alta sensibilidade, bloqueio remoto de tração via VCU e cerca eletrônica. | 12V LV (Consumo ultra baixo < 2W) |
+
+**3. Segurança**
+
+| **Item / Acessório Opcional** | **Descrição Técnica ****&**** Funcionalidade** | **Impacto Elétrico ****&**** Integrabilidade** |
+| --- | --- | --- |
+| **Monitoramento da pressão dos pneus (TPMS)** | Sensores de pressão e temperatura rosqueados nas válvulas das 4 rodas + estepe, transmitindo dados via RF para o painel em tempo real. | 12V LV │ Bateria interna nos sensores (vida 5 anos) |
+| **Sistema de monitoramento por câmeras** | Gravador DVR Veicular para gravação 24/7 do entorno do veículo em estacionamento prolongado com sensor de choque/G-sensor. | 12V LV (Modo sentinela com corte por tensão 12V) |
+| **Alarme volumétrico** | Sistema de alarme antifurto com sensores ultrassônicos para invasão do habitáculo, sensores de inclinação/guincho e sirene autônoma. | 12V LV │ Relés de corte de alimentação |
+| **Imobilizador eletrônico** | Chave presencial com criptografia RFID e bloqueio lógico da VCU, impedindo a energização do contator de alta tensão sem autorização. | Integrado à lógica de partida da VCU |
+| **Sistema automático de supressão de incêndio no compartimento das baterias** | Ampolas de gás limpo/aerossol instaladas dentro das caixas seladas IP68 do pack LFP, disparadas por detecção de calor > 170°C. | Sistema autônomo passivo/térmico │ Sem fiação HV |
+| **Extintor específico para baterias de lítio** | Extintor de incêndio portátil Classe D/Lítio de solução aquosa especial mantido a bordo para resposta imediata. | Suporte de fixação reforçado a bordo |
+| **Beacon/luz de emergência para expedições** | Sinalizador luminoso strobo em LED de cor âmbar/encarnada para sinalização de avaria em estradas escuras ou comboio de rali. | 12V LV (15W) │ Fixação magnética ou no rack |
+
+**4. Off-Road**
+
+| **Item / Acessório Opcional** | **Descrição Técnica ****&**** Funcionalidade** | **Impacto Elétrico ****&**** Integrabilidade** |
+| --- | --- | --- |
+| **Guincho elétrico de maior capacidade** | Guincho elétrico Heavy-Duty (12.000 lbs a 15.000 lbs) com cabo sintético de Kevlar, guia em alumínio e controle sem fio RF. | Bateria 12V AGM dedicada + DC-DC │ Pico 400A |
+| **Para-choques reforçados** | Para-choques dianteiro e traseiro em chapa de aço estrutural cortada a laser com pontos de ancoragem para manilha e base de guincho. | Massa: +35 kg a +50 kg │ Requer ajuste de molas |
+| **Rock sliders** | Protetores de soleira metálicos tubular/caixa ancorados diretamente nas longarinas do chassi para apoio em pedras e macaco Hi-Lift. | Massa: +22 kg (par) │ Proteção do assoalho |
+| **Snorkel (caso permaneça compatível com o projeto)** | Duto de captação de ar elevado mantido/instalado para tomada de ar limpo e livre de poeira para refrigeração e estética off-road. | Instalação na coluna A │ Vedação contra poeira |
+| **Skid plates reforçados em alumínio** | Chapas de proteção inferior em alumínio naval 6mm a 8mm cobrindo motor elétrico, inversor, caixas de bateria e diferenciais. | Massa: +25 kg │ Janelas de drenagem e serviço |
+| **Protetor de diferencial** | Capa reforçada soldada ou aparafusada sobre as tampas dos diferenciais dianteiro e traseiro contra impacto direto de pedras. | Massa: +6 kg (par) │ Aço estrutural |
+| **Compressor de ar embarcado** | Compressor de duplo cilindro 12V (170 L/min) com reservatório de 5L para calibragem pós-trilha e ferramentas pneumáticas. | 12V LV (45A pico) │ Instalação fixa sob o capô |
+| **Sistema central de inflação dos pneus (CTIS), quando tecnicamente viável** | Sistema para ajuste da pressão dos pneus com o veículo em movimento via juntas rotativas nos cubos das rodas e comando no painel. | 12V LV + Linha pneumática dedicada │ Alta complexidade |
+| **Bloqueios de diferencial pneumáticos ou elétricos** | Bloqueios 100% selecionáveis para os diferenciais dianteiro e traseiro (E-Lockers ou Air-Lockers) garantindo tração integral rígida. | 12V LV (10A) │ Compatível com eixo flutuante |
+| **Iluminação auxiliar em LED** | Barra de LED curva de teto, faróis de milha de profundidade e luzes de cena laterais em LED de alta eficiência impermeáveis IP68. | 12V LV (Total ~180W) │ Relés e botões dedicados |
+| **Rack de teto** | Bagageiro de teto reforçado em alumínio estrutural de baixo perfil para suporte de barraca, pranchas de desatolamento e cargas. | Capacidade estática: 300 kg │ Dinâmica: 100 kg |
+| **Suportes externos para pá, machado e galões** | Suportes com trava antifurto fixados nas laterais do rack ou para-choque traseiro para transporte de ferramentas de resgate. | Fixação mecânica reforçada |
+| **Escada traseira** | Escada metálica tubular fixada na porta/lateral traseira para acesso facilitado ao rack de teto e barraca. | Massa: +4 kg │ Revestimento epóxi |
+
+**5. Energia e Autonomia**
+
+| **Item / Acessório Opcional** | **Descrição Técnica ****&**** Funcionalidade** | **Impacto Elétrico ****&**** Integrabilidade** |
+| --- | --- | --- |
+| **Carregador AC embarcado de maior potência** | Upgrade do carregador de bordo (OBC) para 22 kW trifásico, reduzindo o tempo de recarga completa AC pela metade em estações compatíveis. | HV 400V / Entrada Trifásica 32A │ Maior fluxo de ar |
+| **Preparação para carregamento bidirecional (V2L/V2H), quando compatível** | Inversor de potência bidirecional permitindo extrair até 5 kW em 220V AC do pack para alimentar uma residência (V2H) ou equipamentos (V2L). | HV 400V → 220V AC │ Gerenciamento por VCU |
+| **Inversor CA 127/220 V para equipamentos** | Inversor de onda senoidal pura 12V → 220V (2000W contínuos) instalado internamente para alimentar eletrodomésticos convencionais. | 12V LV (requer DC-DC 150A + Bateria 12V auxiliar) |
+| **Tomadas externas de energia** | Conectores externos industriais (padrão Stecker / IP67) embutidos na carroçaria para saída de energia AC sem abrir portas. | Vedação contra água e poeira │ Disjuntor DR |
+| **Painel solar auxiliar para manutenção da bateria de 12 V** | Placa fotovoltaica flexível de 150W a 300W no teto com controlador MPPT mantendo a bateria auxiliar 12V em flutuação sem drenar o pack HV. | Alimentação solar contínua 12V |
+| **Segunda bateria auxiliar de 12 V para acessórios** | Bateria secundária AGM/Lítio 12V isolada por relé sensível à tensão (VSR) dedicada exclusivamente a guincho, geladeira e iluminação. | Isolamento total do sistema elétrico vital do EV |
+
+**6. Expedição**
+
+| **Item / Acessório Opcional** | **Descrição Técnica ****&**** Funcionalidade** | **Impacto Elétrico ****&**** Integrabilidade** |
+| --- | --- | --- |
+| **Geladeira automotiva** | Geladeira/congelador portátil com compressor 12V (35L a 50L) fixa em base deslizante com faixa de temperatura até -18°C. | 12V LV (45W médio) │ Isolamento térmico de poliuretano |
+| **Gaveteiro modular** | Sistema de gavetas em alumínio/compensado naval com corrediças telescópicas reforçadas para organização de ferramentas e mantimentos. | Massa: +30 kg a +45 kg │ Ancorado no assoalho |
+| **Sistema de cozinha retrátil** | Módulo deslizante contendo fogão a gás/indução V2L, pia dobrável e compartimentos para utensílios de acampamento. | Massa: +20 kg │ Trava de retenção em marcha |
+| **Tanque adicional de água** | Reservatório de água potável em polietileno atóxico (40L a 80L) instalado sob o assoalho com bomba elétrica de demanda. | 12V LV (bomba 5A) │ Distribuição de peso centralizada |
+| **Chuveiro portátil elétrico** | Aquecedor de água elétrico instantâneo 12V/V2L ou trocador de calor acoplado à bomba de água com ducha externa. | 12V LV ou 220V V2L │ Mangueira de engate rápido |
+| **Toldo lateral** | Toldo retrátil articulado (2.0m x 2.5m) em lona impermeável Ripstop com hastes telescópicas e iluminação LED integrada. | Massa: +12 kg │ Fixado na lateral do rack de teto |
+| **Barraca de teto** | Barraca articulada de teto (soft-shell ou hard-shell de fibra) para 2 a 3 pessoas com colchão de alta densidade incorporado. | Massa: +50 kg a +70 kg │ Requer reforço do rack |
+| **Cofres internos** | Caixa forte metálica segredada e parafusada à estrutura do veículo para guarda de documentos, valores e equipamentos fotográficos. | Chapa de aço 3mm │ Fechadura tetra ou digital |
+| **Compartimentos estanques** | Caixas de carga de polímero de alta densidade com vedação por anel de borracha e travar de pressão totalmente à prova d'água. | Resistência a imersão temporária IP67 |
+
+**7. Preservação Histórica**
+
+| **Item / Acessório Opcional** | **Descrição Técnica ****&**** Funcionalidade** | **Impacto Elétrico ****&**** Integrabilidade** |
+| --- | --- | --- |
+| **Manutenção da aparência original do cofre do motor** | Capa estotórica do motor elétrico moldada para simular o bloco do motor diesel original (Mercedes-Benz/Toyota) preservando o apelo visual de época. | Fibra de vidro/ABS antichama │ Proteção estética |
+| **Acabamentos reproduzindo componentes originais** | Botões do painel, manoplas de câmbio/reduzida e puxadores usinados em padrão original mantendo a textura e cor de fábrica. | Fidelidade de restauro │ Sem alteração funcional |
+| **Emblemas restaurados** | Plaquetas de identificação, logotipos 'Toyota' e '4x4' originais de época restaurados ou fundidos em latão/alumínio fiel ao catálogo. | Acabamento de coleção |
+| **Pintura conforme catálogo histórico Toyota** | Pintura completa da carroçaria utilizando códigos de tinta PU originais das décadas de 60, 70, 80 e 90 (Ex: Bege Trigo, Amarelo Manga, Verde Tupi). | Padrão de concurso |
+| **Rodas originais restauradas ou réplicas fiéis** | Rodas de aço estampadas originais de 16" restauradas ou usinadas em liga leve com design idêntico ao original ajustadas para o freio a disco. | Dimensionadas para a carga útil e freios a disco |
+
+**8. Monitoramento Técnico**
+
+| **Item / Acessório Opcional** | **Descrição Técnica ****&**** Funcionalidade** | **Impacto Elétrico ****&**** Integrabilidade** |
+| --- | --- | --- |
+| **Display dedicado do BMS** | Monitor OLED secundário no cofre do motor ou painel exibindo o balanço de tensão de cada uma das células LFP e resistência interna. | Comunicação RS485/CAN com o BMS Mestre |
+| **Display de potência e regeneração** | Manômetro analógico com visual retro-fit adaptado para indicar fluxo de corrente de descarga (kW) e taxa de regeneração de frenagem. | Sinal analógico emitido pela VCU |
+| **Registro de telemetria** | Módulo de gravação de dados operacionais em tempo real para análise de eficiência Wh/km, temperaturas e comportamento térmico em trilha. | 12V LV │ Gravação em formato CSV/JSON |
+| **Datalogger para diagnóstico** | Unidade de datalogging de eventos de alta velocidade para captura de falhas intermitentes de HVIL, isolamento elétrico e CAN bus. | Memória não volátil de grau automotivo |
+| **Interface OBD/CAN para manutenção** | Conector padrão OBD-II estendido sob o painel permitindo escaneamento de códigos de falha (DTC) por qualquer scanner padrão CAN. | Porta de diagnóstico padrão ISO 15765 |
+
+**9. Personalização**
+
+| **Item / Acessório Opcional** | **Descrição Técnica ****&**** Funcionalidade** | **Impacto Elétrico ****&**** Integrabilidade** |
+| --- | --- | --- |
+| **Cores exclusivas** | Pintura em tons sob encomenda, acabamento fosco, satinado ou metálico de alta durabilidade com proteção ceramificada anti-risco. | Tratamento de pintura premium |
+| **Revestimentos internos personalizados** | Padronagem de estofamento customizada (xadrez retrô, veludo automotivo ou couro personalizado) com costura dupla contrastante. | Tapeçaria sob medida |
+| **Volante personalizado** | Volante original restaurado com aro revestido em couro perfurado ou volante esportivo vintage em alumínio usinado e madeira. | Preserva o diâmetro e esforço de esterçamento |
+| **Console central exclusivo** | Console entre os bancos usinado sob medida em madeira nobre ou alumínio incorporando porta-copos, porta-objetos e comandos de recarga. | Design sob medida para o habitáculo |
+| **Sistema de som premium** | Amplificador digital oculto com conectividade Bluetooth, alto-falantes de alta fidelidade integrados nos locais originais e subwoofer compacto. | 12V LV (300W RMS) │ Tratamento acústico local |
+| **Iluminação ambiente** | Luzes de fundo em fita LED oculta para o assoalho e painel com seletor de cor e ajuste de brilho suave para condução noturna. | 12V LV (Consumo < 10W) |
+
+| **Diretrizes de Compatibilidade e Instalação:** **Balanço do Peso Bruto Total (PBT): **A adição acumulada de acessórios opcionais off-road e de expedição (guincho, bloqueios, isolamento, compressores, barraca de teto) não deve ultrapassar a margem de carga útil remanescente após a recalibração da suspensão (Seção 9 do Plano Master). **Superdimensionamento de Baixa Tensão (12V): **Caso sejam selecionados simultaneamente o Guincho Elétrico, o Compressor de Pneus, o Inversor 220V e o Freio EPB, é obrigatória a instalação da segunda bateria de 12V AGM em paralelo com relé isolador inteligente e conversor DC-DC de 150A. **Proteção Contra Água (Vau): **Todos os componentes elétricos de acessórios externos (conectores do guincho, compressores, tomadas de energia, iluminação) devem atender ao padrão de vedação IP67/IP68 de acordo com a profundidade de vau certificada do projeto. |
+| --- |
+
+Página 1 de 1
+
+Página 1 de 1
