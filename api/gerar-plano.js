@@ -87,7 +87,7 @@ Execute as 5 etapas definidas no seu papel (Levantamento, Validação, Análise 
       },
       body: JSON.stringify({
         model: "claude-sonnet-4-6",
-        max_tokens: 16000,
+        max_tokens: 40000,
         system: [
           {
             type: "text",
