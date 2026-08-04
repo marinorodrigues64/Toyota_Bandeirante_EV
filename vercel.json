@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/gerar-plano.js": {
+      "includeFiles": "api/data/**"
+    }
+  }
+}
